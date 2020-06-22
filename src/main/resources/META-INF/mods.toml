@@ -1,0 +1,20 @@
+modLoader="javafml"
+loaderVersion="[31,)"
+
+[[mods]]
+modId="project"
+version="1.0.0"
+displayName="project"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+displayURL="https://mcreator.net"
+authors="sampa, MCreator"
+
+[[dependencies.project]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.15.2]"
+    ordering="NONE"
+    side="BOTH"
+
+
+

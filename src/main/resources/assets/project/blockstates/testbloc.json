@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "project:block/testbloc"
+    },
+    "type=top": {
+      "model": "project:block/testbloc_top"
+    },
+    "type=double": {
+      "model": "project:block/testbloc_full"
+    }
+  }
+}

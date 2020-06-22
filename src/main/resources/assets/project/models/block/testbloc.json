@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "project:blocks/test",
+    "top": "project:blocks/test",
+    "side": "project:blocks/test"
+  }
+}
