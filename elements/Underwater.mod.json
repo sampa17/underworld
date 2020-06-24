@@ -1,0 +1,19 @@
+{
+  "_fv": 8,
+  "_type": "fluid",
+  "definition": {
+    "name": "Underwater",
+    "textureStill": "unerwater",
+    "textureFlowing": "unerwater",
+    "luminosity": 2,
+    "density": 500,
+    "viscosity": 500,
+    "isGas": true,
+    "type": "WATER",
+    "generateBucket": true,
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "spawnWorldTypes": []
+  }
+}

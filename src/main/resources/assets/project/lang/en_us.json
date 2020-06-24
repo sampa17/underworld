@@ -1,3 +1,7 @@
 {
-  "block.project.testbloc": "Dalle en béton noir"
+  "item.project.underwater_bucket": "Underwater Bucket",
+  "block.project.understone": "Under Stone",
+  "item.project.bedrockdimension": "Bedrockdimension Portal Igniter",
+  "fluid.underwater": "Underwater",
+  "item.project.bedrocktracer": "Bedrock Transpercer "
 }

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "project:blocks/understone",
+    "up": "project:blocks/understone",
+    "north": "project:blocks/understone",
+    "east": "project:blocks/understone",
+    "south": "project:blocks/understone",
+    "west": "project:blocks/understone",
+    "particle": "project:blocks/understone"
+  }
+}

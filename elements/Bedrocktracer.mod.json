@@ -1,0 +1,26 @@
+{
+  "_fv": 8,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "bedrockpracer",
+    "customModelName": "Normal",
+    "name": "Bedrock Transpercer ",
+    "specialInfo": [
+      "Pour accéder à l'Underworld ."
+    ],
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "toolType": "Special",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.0,
+    "enchantability": 2,
+    "damageVsEntity": 4.0,
+    "usageCount": 800,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": []
+  }
+}

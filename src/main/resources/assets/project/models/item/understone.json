@@ -1,5 +1,5 @@
 {
-  "parent": "project:block/testbloc",
+  "parent": "project:block/understone",
   "display": {
     "thirdperson": {
       "rotation": [

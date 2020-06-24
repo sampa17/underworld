@@ -1,0 +1,47 @@
+{
+  "_fv": 8,
+  "_type": "dimension",
+  "definition": {
+    "portalFrame": {
+      "value": "Blocks.BEDROCK"
+    },
+    "portalParticles": {
+      "value": "PORTAL"
+    },
+    "portalLuminance": 0.0,
+    "portalSound": {
+      "value": "block.portal.ambient"
+    },
+    "igniterName": "Bedrockdimension Portal Igniter",
+    "igniterTab": {
+      "value": "TOOLS"
+    },
+    "texture": "",
+    "portalTexture": "",
+    "enablePortal": false,
+    "biomesInDimension": [
+      {
+        "value": "CUSTOM:Bedrockbiome"
+      }
+    ],
+    "worldGenType": "Nether like gen",
+    "mainFillerBlock": {
+      "value": "Blocks.BEDROCK"
+    },
+    "fluidBlock": {
+      "value": "CUSTOM:Underwater"
+    },
+    "airColor": {
+      "value": -6750055,
+      "falpha": 0.0
+    },
+    "canRespawnHere": true,
+    "hasFog": false,
+    "hasWeather": false,
+    "isDark": false,
+    "doesWaterVaporize": false,
+    "sleepResult": "ALLOW",
+    "hasSkyLight": false,
+    "imitateOverworldBehaviour": false
+  }
+}
