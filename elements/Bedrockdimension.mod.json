@@ -16,8 +16,8 @@
     "igniterTab": {
       "value": "TOOLS"
     },
-    "texture": "",
-    "portalTexture": "",
+    "texture": "bedrockpracer",
+    "portalTexture": "understone",
     "enablePortal": false,
     "biomesInDimension": [
       {

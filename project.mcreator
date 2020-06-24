@@ -55,16 +55,32 @@
       "ids": {},
       "registry_name": "accedbedrock",
       "metadata": {
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       }
+    },
+    {
+      "name": "Undergolem",
+      "type": "mob",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "undergolem"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "entity.project.undergolem": "Under Golem",
       "item.project.underwater_bucket": "Underwater Bucket",
       "block.project.understone": "Under Stone",
+      "item.project.undergolem": "Under Golem Spawn Egg",
       "item.project.bedrockdimension": "Bedrockdimension Portal Igniter",
       "fluid.underwater": "Underwater",
       "item.project.bedrocktracer": "Bedrock Transpercer "

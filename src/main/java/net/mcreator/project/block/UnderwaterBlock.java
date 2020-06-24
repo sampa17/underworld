@@ -2,7 +2,9 @@
 package net.mcreator.project.block;
 
 import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fluids.ForgeFlowingFluid;
 import net.minecraftforge.fluids.FluidAttributes;
@@ -11,6 +13,16 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.gen.placement.Placement;
+import net.minecraft.world.gen.placement.ChanceConfig;
+import net.minecraft.world.gen.feature.LakesFeature;
+import net.minecraft.world.gen.feature.BlockStateFeatureConfig;
+import net.minecraft.world.gen.GenerationStage;
+import net.minecraft.world.gen.ChunkGenerator;
+import net.minecraft.world.dimension.DimensionType;
+import net.minecraft.world.biome.Biome;
+import net.minecraft.world.IWorld;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.item.Items;
 import net.minecraft.item.ItemGroup;
@@ -24,7 +36,10 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.FlowingFluidBlock;
 import net.minecraft.block.Block;
 
+import net.mcreator.project.world.dimension.BedrockdimensionDimension;
 import net.mcreator.project.ProjectModElements;
+
+import java.util.Random;
 
 @ProjectModElements.ModElement.Tag
 public class UnderwaterBlock extends ProjectModElements.ModElement {
@@ -64,5 +79,24 @@ public class UnderwaterBlock extends ProjectModElements.ModElement {
 		}.setRegistryName("underwater"));
 		elements.items.add(() -> new BucketItem(still, new Item.Properties().containerItem(Items.BUCKET).maxStackSize(1).group(ItemGroup.MISC))
 				.setRegistryName("underwater_bucket"));
+	}
+
+	@Override
+	public void init(FMLCommonSetupEvent event) {
+		for (Biome biome : ForgeRegistries.BIOMES.getValues()) {
+			biome.addFeature(GenerationStage.Decoration.LOCAL_MODIFICATIONS, new LakesFeature(BlockStateFeatureConfig::deserialize) {
+				@Override
+				public boolean place(IWorld world, ChunkGenerator generator, Random rand, BlockPos pos, BlockStateFeatureConfig config) {
+					DimensionType dimensionType = world.getDimension().getType();
+					boolean dimensionCriteria = false;
+					if (dimensionType == BedrockdimensionDimension.type)
+						dimensionCriteria = true;
+					if (!dimensionCriteria)
+						return false;
+					return super.place(world, generator, rand, pos, config);
+				}
+			}.withConfiguration(new BlockStateFeatureConfig(block.getDefaultState()))
+					.withPlacement(Placement.WATER_LAKE.configure(new ChanceConfig(5))));
+		}
 	}
 }

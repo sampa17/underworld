@@ -1,6 +1,8 @@
 {
+  "entity.project.undergolem": "Under Golem",
   "item.project.underwater_bucket": "Underwater Bucket",
   "block.project.understone": "Under Stone",
+  "item.project.undergolem": "Under Golem Spawn Egg",
   "item.project.bedrockdimension": "Bedrockdimension Portal Igniter",
   "fluid.underwater": "Underwater",
   "item.project.bedrocktracer": "Bedrock Transpercer "

@@ -59,6 +59,10 @@
       "value": "No parent"
     },
     "biomeDictionaryTypes": [],
-    "spawnList": []
+    "spawnList": [
+      {
+        "value": "CUSTOM:Undergolem"
+      }
+    ]
   }
 }
