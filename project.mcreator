@@ -87,19 +87,82 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "undergolem"
+    },
+    {
+      "name": "Ingottitane",
+      "type": "item",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ingottitane"
+    },
+    {
+      "name": "Titane",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "titane"
+    },
+    {
+      "name": "Surfacestone",
+      "type": "block",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "surfacestone"
+    },
+    {
+      "name": "Switchdim",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "switchdim",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.project.surfacestone": "Surface Stone",
+      "block.project.titane": "Titane Ore",
       "entity.project.undergolem": "Under Golem",
       "item.project.underwater_bucket": "Underwater Bucket",
       "block.project.understone": "Under Stone",
       "item.project.undergolem": "Under Golem Spawn Egg",
       "item.project.bedrockdimension": "Bedrockdimension Portal Igniter",
+      "item.project.ingottitane": "Titane Ingot",
       "fluid.underwater": "Underwater",
-      "item.project.bedrocktracer": "Bedrock Transpercer "
+      "item.project.bedrocktracer": "Bedrock  switcher"
     }
   },
   "workspaceSettings": {

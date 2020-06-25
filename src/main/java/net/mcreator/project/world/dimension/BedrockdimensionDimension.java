@@ -118,7 +118,7 @@ public class BedrockdimensionDimension extends ProjectModElements.ModElement {
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public Vec3d getFogColor(float cangle, float ticks) {
-			return new Vec3d(0.6, 0, 0.6);
+			return new Vec3d(0, 0, 0);
 		}
 
 		@Override

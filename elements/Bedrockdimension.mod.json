@@ -32,7 +32,7 @@
       "value": "CUSTOM:Underwater"
     },
     "airColor": {
-      "value": -6750055,
+      "value": -16777216,
       "falpha": 0.0
     },
     "canRespawnHere": true,

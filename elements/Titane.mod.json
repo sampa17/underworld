@@ -1,0 +1,102 @@
+{
+  "_fv": 8,
+  "_type": "block",
+  "definition": {
+    "texture": "titane",
+    "textureTop": "titane",
+    "textureLeft": "titane",
+    "textureFront": "titane",
+    "textureRight": "titane",
+    "textureBack": "titane",
+    "renderType": 10,
+    "customModelName": "Normal",
+    "rotationMode": 0,
+    "hasTransparency": false,
+    "connectedSides": false,
+    "transparencyType": "SOLID",
+    "mx": 0.0,
+    "my": 0.0,
+    "mz": 0.0,
+    "Mx": 1.0,
+    "My": 1.0,
+    "Mz": 1.0,
+    "name": "Titane Ore",
+    "specialInfo": [],
+    "hardness": 1.2,
+    "resistance": 20.0,
+    "hasGravity": true,
+    "creativeTab": {
+      "value": "BUILDING_BLOCKS"
+    },
+    "destroyTool": "Not specified",
+    "customDrop": {
+      "value": "CUSTOM:Ingottitane"
+    },
+    "dropAmount": 1,
+    "isBeaconBase": false,
+    "enchantPowerBonus": 0.0,
+    "plantsGrowOn": false,
+    "canProvidePower": false,
+    "lightOpacity": 255,
+    "material": {
+      "value": "ROCK"
+    },
+    "tickRate": 10,
+    "tickRandomly": false,
+    "isReplaceable": false,
+    "colorOnMap": "DEFAULT",
+    "creativePickItem": {
+      "value": ""
+    },
+    "offsetType": "NONE",
+    "aiPathNodeType": "DEFAULT",
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "isLadder": false,
+    "slipperiness": 0.6,
+    "reactionToPushing": "NORMAL",
+    "isNotColidable": false,
+    "soundOnStep": {
+      "value": "STONE"
+    },
+    "luminance": 0.0,
+    "unbreakable": false,
+    "breakHarvestLevel": 1,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "particleSpawningShape": "Spread",
+    "particleSpawningRadious": 0.5,
+    "particleAmount": 4,
+    "particleSpawningCondition": "ALWAYS",
+    "hasInventory": false,
+    "guiBoundTo": "<NONE>",
+    "openGUIOnRightClick": false,
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "inventoryDropWhenDestroyed": true,
+    "inventoryComparatorPower": true,
+    "inventoryOutSlotIDs": [],
+    "inventoryInSlotIDs": [],
+    "spawnWorldTypes": [
+      "CUSTOM:Bedrockdimension"
+    ],
+    "restrictionBiomes": [],
+    "blocksToReplace": [
+      {
+        "value": "Blocks.STONE"
+      },
+      {
+        "value": "CUSTOM:Understone"
+      },
+      {
+        "value": "Blocks.BEDROCK"
+      }
+    ],
+    "frequencyPerChunks": 5,
+    "frequencyOnChunk": 8,
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 64
+  }
+}

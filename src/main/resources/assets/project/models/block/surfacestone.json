@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "project:blocks/cobblestone_mossy",
+    "up": "project:blocks/cobblestone_mossy",
+    "north": "project:blocks/cobblestone_mossy",
+    "east": "project:blocks/cobblestone_mossy",
+    "south": "project:blocks/cobblestone_mossy",
+    "west": "project:blocks/cobblestone_mossy",
+    "particle": "project:blocks/cobblestone_mossy"
+  }
+}

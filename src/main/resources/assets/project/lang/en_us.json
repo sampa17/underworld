@@ -1,9 +1,12 @@
 {
+  "block.project.surfacestone": "Surface Stone",
+  "block.project.titane": "Titane Ore",
   "entity.project.undergolem": "Under Golem",
   "item.project.underwater_bucket": "Underwater Bucket",
   "block.project.understone": "Under Stone",
   "item.project.undergolem": "Under Golem Spawn Egg",
   "item.project.bedrockdimension": "Bedrockdimension Portal Igniter",
+  "item.project.ingottitane": "Titane Ingot",
   "fluid.underwater": "Underwater",
-  "item.project.bedrocktracer": "Bedrock Transpercer "
+  "item.project.bedrocktracer": "Bedrock  switcher"
 }

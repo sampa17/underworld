@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "project:blocks/titane",
+    "up": "project:blocks/titane",
+    "north": "project:blocks/titane",
+    "east": "project:blocks/titane",
+    "south": "project:blocks/titane",
+    "west": "project:blocks/titane",
+    "particle": "project:blocks/titane"
+  }
+}
