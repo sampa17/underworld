@@ -14,12 +14,12 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.gen.Heightmap;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.World;
+import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
@@ -53,7 +53,7 @@ public class UndergolemEntity extends ProjectModElements.ModElement {
 	@Override
 	public void initElements() {
 		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER).setShouldReceiveVelocityUpdates(true)
-				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire().size(0.6f, 1.8f))
+				.setTrackingRange(63).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire().size(0.6f, 1.95f))
 						.build("undergolem").setRegistryName("undergolem");
 		elements.entities.add(() -> entity);
 		elements.items
@@ -78,10 +78,10 @@ public class UndergolemEntity extends ProjectModElements.ModElement {
 	@OnlyIn(Dist.CLIENT)
 	public void registerModels(ModelRegistryEvent event) {
 		RenderingRegistry.registerEntityRenderingHandler(entity, renderManager -> {
-			return new MobRenderer(renderManager, new Modelcustom_model(), 0.5f) {
+			return new MobRenderer(renderManager, new Modelgeometryirongolem(), 0.5f) {
 				@Override
 				public ResourceLocation getEntityTexture(Entity entity) {
-					return new ResourceLocation("project:textures/foreuse.png");
+					return new ResourceLocation("project:textures/dark_golem_story_mode.png");
 				}
 			};
 		});
@@ -100,16 +100,16 @@ public class UndergolemEntity extends ProjectModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false));
+			this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.5, false));
 			this.goalSelector.addGoal(2, new RandomWalkingGoal(this, 1));
-			this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
+			this.targetSelector.addGoal(3, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
 			this.goalSelector.addGoal(4, new LookRandomlyGoal(this));
 			this.goalSelector.addGoal(5, new SwimGoal(this));
-			this.goalSelector.addGoal(6, new MeleeAttackGoal(this, 1.2, false));
+			this.goalSelector.addGoal(6, new MeleeAttackGoal(this, 1.5, false));
 			this.targetSelector.addGoal(7, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
 			this.goalSelector.addGoal(8, new RandomWalkingGoal(this, 0.8));
 			this.goalSelector.addGoal(9, new LookRandomlyGoal(this));
-			this.targetSelector.addGoal(10, new NearestAttackableTargetGoal(this, PlayerEntity.class, false, false));
+			this.targetSelector.addGoal(10, new NearestAttackableTargetGoal(this, UndergolemEntity.CustomEntity.class, false, false));
 		}
 
 		@Override
@@ -154,27 +154,60 @@ public class UndergolemEntity extends ProjectModElements.ModElement {
 			if (this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED) != null)
 				this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.4);
 			if (this.getAttribute(SharedMonsterAttributes.MAX_HEALTH) != null)
-				this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(50);
+				this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(200);
 			if (this.getAttribute(SharedMonsterAttributes.ARMOR) != null)
 				this.getAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(0.5);
 			if (this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE) == null)
 				this.getAttributes().registerAttribute(SharedMonsterAttributes.ATTACK_DAMAGE);
-			this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(5);
+			this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(6);
 		}
 	}
 
-	// Made with Blockbench 3.5.2
-	// Exported for Minecraft version 1.15
-	// Paste this class into your mod and generate all required imports
-	public static class Modelcustom_model extends EntityModel<Entity> {
-		public Modelcustom_model() {
-			textureWidth = 16;
-			textureHeight = 16;
+	public static class Modelgeometryirongolem extends EntityModel<Entity> {
+		private final ModelRenderer body;
+		private final ModelRenderer head;
+		private final ModelRenderer arm0;
+		private final ModelRenderer arm1;
+		private final ModelRenderer leg0;
+		private final ModelRenderer leg1;
+		public Modelgeometryirongolem() {
+			textureWidth = 128;
+			textureHeight = 128;
+			body = new ModelRenderer(this);
+			body.setRotationPoint(0.0F, -7.0F, 0.0F);
+			body.setTextureOffset(0, 40).addBox(-9.0F, -2.0F, -6.0F, 18.0F, 12.0F, 11.0F, 0.0F, true);
+			body.setTextureOffset(0, 70).addBox(-4.5F, 10.0F, -3.0F, 9.0F, 5.0F, 6.0F, 0.5F, true);
+			head = new ModelRenderer(this);
+			head.setRotationPoint(0.0F, -7.0F, -2.0F);
+			head.setTextureOffset(0, 0).addBox(-3.0F, -14.3774F, -4.6845F, 1.0F, 3.0F, 1.0F, 0.0F, false);
+			head.setTextureOffset(0, 0).addBox(2.0F, -14.3774F, -4.6845F, 1.0F, 3.0F, 1.0F, 0.0F, false);
+			head.setTextureOffset(0, 0).addBox(-4.0F, -12.0F, -5.5F, 8.0F, 10.0F, 8.0F, 0.0F, true);
+			head.setTextureOffset(0, 0).addBox(-4.0F, -8.0F, -6.0F, 8.0F, 1.0F, 1.0F, 0.0F, false);
+			arm0 = new ModelRenderer(this);
+			arm0.setRotationPoint(0.0F, -7.0F, 0.0F);
+			setRotationAngle(arm0, -0.2618F, 0.0F, 0.0F);
+			arm0.setTextureOffset(60, 21).addBox(9.0F, -1.5F, -3.0F, 4.0F, 29.0F, 6.0F, 0.0F, true);
+			arm1 = new ModelRenderer(this);
+			arm1.setRotationPoint(0.0F, -7.0F, 0.0F);
+			setRotationAngle(arm1, -0.1745F, 0.0F, 0.0F);
+			arm1.setTextureOffset(60, 58).addBox(-13.0F, -1.5F, -3.0F, 4.0F, 29.0F, 6.0F, 0.0F, true);
+			leg0 = new ModelRenderer(this);
+			leg0.setRotationPoint(4.0F, 11.0F, 0.0F);
+			leg0.setTextureOffset(37, 0).addBox(-2.5F, -3.0F, -3.0F, 6.0F, 16.0F, 5.0F, 0.0F, true);
+			leg1 = new ModelRenderer(this);
+			leg1.setRotationPoint(-5.0F, 11.0F, 0.0F);
+			leg1.setTextureOffset(37, 0).addBox(-1.5F, -3.0F, -3.0F, 6.0F, 16.0F, 5.0F, 0.0F, false);
 		}
 
 		@Override
 		public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue,
 				float alpha) {
+			body.render(matrixStack, buffer, packedLight, packedOverlay);
+			head.render(matrixStack, buffer, packedLight, packedOverlay);
+			arm0.render(matrixStack, buffer, packedLight, packedOverlay);
+			arm1.render(matrixStack, buffer, packedLight, packedOverlay);
+			leg0.render(matrixStack, buffer, packedLight, packedOverlay);
+			leg1.render(matrixStack, buffer, packedLight, packedOverlay);
 		}
 
 		public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
@@ -184,6 +217,12 @@ public class UndergolemEntity extends ProjectModElements.ModElement {
 		}
 
 		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4) {
+			this.head.rotateAngleY = f3 / (180F / (float) Math.PI);
+			this.head.rotateAngleX = f4 / (180F / (float) Math.PI);
+			this.leg0.rotateAngleX = MathHelper.cos(f * 1.0F) * -1.0F * f1;
+			this.leg1.rotateAngleX = MathHelper.cos(f * 1.0F) * 1.0F * f1;
+			this.arm1.rotateAngleX = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
+			this.arm0.rotateAngleX = MathHelper.cos(f * 0.6662F) * f1;
 		}
 	}
 }
