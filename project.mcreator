@@ -147,6 +147,15 @@
           }
         ]
       }
+    },
+    {
+      "name": "Craftbedrocktranspercer",
+      "type": "recipe",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "craftbedrocktranspercer"
     }
   ],
   "variable_elements": [],
