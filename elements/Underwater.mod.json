@@ -12,7 +12,7 @@
     "type": "WATER",
     "generateBucket": true,
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:Tabmod"
     },
     "spawnWorldTypes": [
       "CUSTOM:Bedrockdimension"

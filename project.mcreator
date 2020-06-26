@@ -183,6 +183,93 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "titanefuel"
+    },
+    {
+      "name": "Version",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "version",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Vibraniumfuel",
+      "type": "fuel",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vibraniumfuel"
+    },
+    {
+      "name": "Lampevibranium",
+      "type": "block",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lampevibranium"
+    },
+    {
+      "name": "Craftlampvibranium",
+      "type": "recipe",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "craftlampvibranium"
+    },
+    {
+      "name": "Tabmod",
+      "type": "tab",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tabmod"
+    },
+    {
+      "name": "WikiCommandExecuted",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wiki_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Wiki",
+      "type": "command",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wiki"
     }
   ],
   "variable_elements": [],
@@ -194,8 +281,10 @@
       "entity.project.undergolem": "Under Golem",
       "item.project.vibranim": "Vibranium Crystal",
       "item.project.undergolem": "Under Golem Spawn Egg",
+      "itemGroup.tabtabmod": "Underworld Mod",
       "fluid.underwater": "Underwater",
       "item.project.bedrocktracer": "World Switcher",
+      "block.project.lampevibranium": "Vibranium Lamp",
       "item.project.underwater_bucket": "Underwater Bucket",
       "block.project.understone": "Under Stone",
       "item.project.bedrockdimension": "Bedrockdimension Portal Igniter",

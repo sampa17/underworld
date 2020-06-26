@@ -1,0 +1,9 @@
+{
+  "parent": "project:custom/lamppe",
+  "textures": {
+    "all": "project:blocks/iron_block",
+    "particle": "project:blocks/iron_block",
+    "0": "project:blocks/blue",
+    "1": "project:blocks/iron_block"
+  }
+}

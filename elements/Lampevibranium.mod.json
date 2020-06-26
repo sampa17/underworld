@@ -2,16 +2,16 @@
   "_fv": 8,
   "_type": "block",
   "definition": {
-    "texture": "titane",
-    "textureTop": "titane",
-    "textureLeft": "titane",
-    "textureFront": "titane",
-    "textureRight": "titane",
-    "textureBack": "titane",
-    "renderType": 10,
-    "customModelName": "Normal",
+    "texture": "iron_block",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
+    "renderType": 2,
+    "customModelName": "lamppe:default",
     "rotationMode": 0,
-    "hasTransparency": false,
+    "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "mx": 0.0,
@@ -20,10 +20,10 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "name": "Titane Ore",
+    "name": "Vibranium Lamp",
     "specialInfo": [],
-    "hardness": 1.2,
-    "resistance": 20.0,
+    "hardness": 1.0,
+    "resistance": 10.0,
     "hasGravity": false,
     "creativeTab": {
       "value": "CUSTOM:Tabmod"
@@ -37,9 +37,9 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canProvidePower": false,
-    "lightOpacity": 255,
+    "lightOpacity": 0,
     "material": {
-      "value": "ROCK"
+      "value": "GLASS"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -57,9 +57,9 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "STONE"
+      "value": "LANTERN"
     },
-    "luminance": 0.0,
+    "luminance": 1.0,
     "unbreakable": false,
     "breakHarvestLevel": 1,
     "spawnParticles": false,
@@ -79,23 +79,11 @@
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [],
     "inventoryInSlotIDs": [],
-    "spawnWorldTypes": [
-      "CUSTOM:Bedrockdimension"
-    ],
+    "spawnWorldTypes": [],
     "restrictionBiomes": [],
-    "blocksToReplace": [
-      {
-        "value": "Blocks.STONE"
-      },
-      {
-        "value": "CUSTOM:Understone"
-      },
-      {
-        "value": "Blocks.BEDROCK"
-      }
-    ],
-    "frequencyPerChunks": 5,
-    "frequencyOnChunk": 8,
+    "blocksToReplace": [],
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 64
   }

@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "name": "Titane Ingot",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:Tabmod"
     },
     "stackSize": 64,
     "enchantability": 0,

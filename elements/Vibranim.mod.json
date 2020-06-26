@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "name": "Vibranium Crystal",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:Tabmod"
     },
     "stackSize": 16,
     "enchantability": 0,

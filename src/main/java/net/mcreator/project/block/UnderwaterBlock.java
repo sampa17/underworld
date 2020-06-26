@@ -25,7 +25,6 @@ import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.item.Items;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BucketItem;
 import net.minecraft.fluid.Fluid;
@@ -37,6 +36,7 @@ import net.minecraft.block.FlowingFluidBlock;
 import net.minecraft.block.Block;
 
 import net.mcreator.project.world.dimension.BedrockdimensionDimension;
+import net.mcreator.project.itemgroup.TabmodItemGroup;
 import net.mcreator.project.ProjectModElements;
 
 import java.util.Random;
@@ -77,7 +77,7 @@ public class UnderwaterBlock extends ProjectModElements.ModElement {
 		flowing = (FlowingFluid) new ForgeFlowingFluid.Flowing(fluidproperties).setRegistryName("underwater_flowing");
 		elements.blocks.add(() -> new FlowingFluidBlock(still, Block.Properties.create(Material.WATER)) {
 		}.setRegistryName("underwater"));
-		elements.items.add(() -> new BucketItem(still, new Item.Properties().containerItem(Items.BUCKET).maxStackSize(1).group(ItemGroup.MISC))
+		elements.items.add(() -> new BucketItem(still, new Item.Properties().containerItem(Items.BUCKET).maxStackSize(1).group(TabmodItemGroup.tab))
 				.setRegistryName("underwater_bucket"));
 	}
 

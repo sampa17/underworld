@@ -4,10 +4,10 @@ package net.mcreator.project.item;
 import net.minecraftforge.registries.ObjectHolder;
 
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.block.BlockState;
 
+import net.mcreator.project.itemgroup.TabmodItemGroup;
 import net.mcreator.project.ProjectModElements;
 
 @ProjectModElements.ModElement.Tag
@@ -24,7 +24,7 @@ public class IngottitaneItem extends ProjectModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(64));
+			super(new Item.Properties().group(TabmodItemGroup.tab).maxStackSize(64));
 			setRegistryName("ingottitane");
 		}
 

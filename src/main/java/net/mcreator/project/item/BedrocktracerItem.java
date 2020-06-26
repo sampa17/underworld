@@ -8,7 +8,6 @@ import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
@@ -17,6 +16,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.block.BlockState;
 
+import net.mcreator.project.itemgroup.TabmodItemGroup;
 import net.mcreator.project.ProjectModElements;
 
 import java.util.List;
@@ -43,7 +43,7 @@ public class BedrocktracerItem extends ProjectModElements.ModElement {
 	}
 	private static class ItemToolCustom extends Item {
 		protected ItemToolCustom() {
-			super(new Item.Properties().group(ItemGroup.TOOLS).maxDamage(800));
+			super(new Item.Properties().group(TabmodItemGroup.tab).maxDamage(800));
 		}
 
 		@Override

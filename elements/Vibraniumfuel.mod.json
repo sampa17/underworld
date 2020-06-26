@@ -1,0 +1,10 @@
+{
+  "_fv": 8,
+  "_type": "fuel",
+  "definition": {
+    "power": 3000,
+    "block": {
+      "value": "CUSTOM:Vibranim"
+    }
+  }
+}
