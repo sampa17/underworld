@@ -1,0 +1,10 @@
+{
+  "parent": "project:custom/bombonne",
+  "textures": {
+    "all": "project:blocks/zyx",
+    "particle": "project:blocks/zyx",
+    "1": "project:blocks/zyx",
+    "2": "project:blocks/zyxx",
+    "3": "project:blocks/blue"
+  }
+}

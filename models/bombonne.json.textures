@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "zyx",
+        "2": "zyxx",
+        "3": "blue"
+      },
+      "name": "default"
+    }
+  }
+}

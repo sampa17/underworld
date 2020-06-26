@@ -270,6 +270,53 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "wiki"
+    },
+    {
+      "name": "Bombonne",
+      "type": "block",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bombonne"
+    },
+    {
+      "name": "Craftbombonne",
+      "type": "recipe",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "craftbombonne"
+    },
+    {
+      "name": "BombonneBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bombonne_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -287,6 +334,7 @@
       "block.project.lampevibranium": "Vibranium Lamp",
       "item.project.underwater_bucket": "Underwater Bucket",
       "block.project.understone": "Under Stone",
+      "block.project.bombonne": "Vibranium Bombs",
       "item.project.bedrockdimension": "Bedrockdimension Portal Igniter",
       "item.project.ingottitane": "Titane Ingot",
       "block.project.vibraniumore": "Vibranium Ore"
