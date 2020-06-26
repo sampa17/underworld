@@ -3,11 +3,14 @@ loaderVersion="[31,)"
 
 [[mods]]
 modId="project"
-version="1.0.0"
+version="Alpha 1.0.0"
 displayName="project"
-credits="Created using mod maker MCreator - https://mcreator.net/about"
-displayURL="https://mcreator.net"
-authors="sampa, MCreator"
+credits="Créer par sampa17 ."
+displayURL="https://github.com/sampa17/underworld"
+authors="sampa, cornysneeze"
+description='''
+Ce mod rajoute un monde en dessous de la surface , sous la Bedrock , l'Underworld .
+'''
 
 [[dependencies.project]]
     modId="minecraft"

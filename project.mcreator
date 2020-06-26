@@ -317,6 +317,24 @@
           }
         ]
       }
+    },
+    {
+      "name": "Ecaille",
+      "type": "item",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ecaille"
+    },
+    {
+      "name": "Primitif",
+      "type": "mob",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "primitif"
     }
   ],
   "variable_elements": [],
@@ -333,19 +351,23 @@
       "item.project.bedrocktracer": "World Switcher",
       "block.project.lampevibranium": "Vibranium Lamp",
       "item.project.underwater_bucket": "Underwater Bucket",
+      "entity.project.primitif": "Primitif",
       "block.project.understone": "Under Stone",
       "block.project.bombonne": "Vibranium Bombs",
       "item.project.bedrockdimension": "Bedrockdimension Portal Igniter",
+      "item.project.ecaille": "Primitif Scales",
       "item.project.ingottitane": "Titane Ingot",
-      "block.project.vibraniumore": "Vibranium Ore"
+      "block.project.vibraniumore": "Vibranium Ore",
+      "item.project.primitif": "Primitif Spawn Egg"
     }
   },
   "workspaceSettings": {
     "modid": "project",
     "modName": "project",
-    "version": "1.0.0",
-    "author": "sampa, MCreator",
-    "websiteURL": "https://mcreator.net",
+    "version": "Alpha 1.0.0",
+    "description": "Ce mod rajoute un monde en dessous de la surface , sous la Bedrock , l\u0027Underworld .",
+    "author": "sampa, cornysneeze",
+    "websiteURL": "https://github.com/sampa17/underworld",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "requiredMods": [],
@@ -353,6 +375,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.15.2",
+    "credits": "Créer par sampa17 .",
     "modElementsPackage": "net.mcreator.project",
     "lockBaseModFiles": false
   },
