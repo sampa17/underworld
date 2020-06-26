@@ -11,11 +11,11 @@ import net.minecraft.block.BlockState;
 import net.mcreator.project.ProjectModElements;
 
 @ProjectModElements.ModElement.Tag
-public class IngottitaneItem extends ProjectModElements.ModElement {
-	@ObjectHolder("project:ingottitane")
+public class VibranimItem extends ProjectModElements.ModElement {
+	@ObjectHolder("project:vibranim")
 	public static final Item block = null;
-	public IngottitaneItem(ProjectModElements instance) {
-		super(instance, 7);
+	public VibranimItem(ProjectModElements instance) {
+		super(instance, 10);
 	}
 
 	@Override
@@ -24,8 +24,8 @@ public class IngottitaneItem extends ProjectModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(64));
-			setRegistryName("ingottitane");
+			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(16));
+			setRegistryName("vibranim");
 		}
 
 		@Override

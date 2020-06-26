@@ -3,13 +3,13 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "titaneingot",
+    "texture": "bsdiamondgem",
     "customModelName": "Normal",
-    "name": "Titane Ingot",
+    "name": "Vibranium Crystal",
     "creativeTab": {
       "value": "MISC"
     },
-    "stackSize": 64,
+    "stackSize": 16,
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,

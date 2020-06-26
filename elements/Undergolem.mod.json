@@ -50,7 +50,7 @@
     "movementSpeed": 0.4,
     "armorBaseValue": 0.5,
     "trackingRange": 63,
-    "health": 200,
+    "health": 100,
     "xpAmount": 30,
     "waterMob": false,
     "flyingMob": false,
@@ -67,7 +67,7 @@
     "immuneToPotions": false,
     "immuneToPlayer": false,
     "mobDrop": {
-      "value": ""
+      "value": "CUSTOM:Ingottitane"
     },
     "livingSound": {
       "value": "entity.irongolem.step"

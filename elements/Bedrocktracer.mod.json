@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "bedrockpracer",
     "customModelName": "Normal",
-    "name": "Bedrock  switcher",
+    "name": "World Switcher",
     "specialInfo": [
       "Pour accéder à l'Underworld ."
     ],

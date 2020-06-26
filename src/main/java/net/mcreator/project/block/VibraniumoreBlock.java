@@ -22,11 +22,11 @@ import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
-import net.minecraft.block.FallingBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.project.world.dimension.BedrockdimensionDimension;
+import net.mcreator.project.item.VibranimItem;
 import net.mcreator.project.ProjectModElements;
 
 import java.util.Random;
@@ -34,11 +34,11 @@ import java.util.List;
 import java.util.Collections;
 
 @ProjectModElements.ModElement.Tag
-public class SurfacestoneBlock extends ProjectModElements.ModElement {
-	@ObjectHolder("project:surfacestone")
+public class VibraniumoreBlock extends ProjectModElements.ModElement {
+	@ObjectHolder("project:vibraniumore")
 	public static final Block block = null;
-	public SurfacestoneBlock(ProjectModElements instance) {
-		super(instance, 8);
+	public VibraniumoreBlock(ProjectModElements instance) {
+		super(instance, 11);
 	}
 
 	@Override
@@ -47,10 +47,10 @@ public class SurfacestoneBlock extends ProjectModElements.ModElement {
 		elements.items
 				.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(block.getRegistryName()));
 	}
-	public static class CustomBlock extends FallingBlock {
+	public static class CustomBlock extends Block {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).lightValue(0));
-			setRegistryName("surfacestone");
+			setRegistryName("vibraniumore");
 		}
 
 		@Override
@@ -58,7 +58,7 @@ public class SurfacestoneBlock extends ProjectModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(this, 1));
+			return Collections.singletonList(new ItemStack(VibranimItem.block, (int) (1)));
 		}
 	}
 	@Override
@@ -75,12 +75,12 @@ public class SurfacestoneBlock extends ProjectModElements.ModElement {
 						return false;
 					return super.place(world, generator, rand, pos, config);
 				}
-			}.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.create("surfacestone", "surfacestone", blockAt -> {
+			}.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.create("vibraniumore", "vibraniumore", blockAt -> {
 				boolean blockCriteria = false;
-				if (blockAt.getBlock() == UnderstoneBlock.block.getDefaultState().getBlock())
+				if (blockAt.getBlock() == TitaneBlock.block.getDefaultState().getBlock())
 					blockCriteria = true;
 				return blockCriteria;
-			}), block.getDefaultState(), 8)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(10, 0, 0, 64))));
+			}), block.getDefaultState(), 5)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(6, 0, 0, 64))));
 		}
 	}
 }

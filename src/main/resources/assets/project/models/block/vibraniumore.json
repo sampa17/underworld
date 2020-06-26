@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "project:blocks/vibraniumore",
+    "up": "project:blocks/vibraniumore",
+    "north": "project:blocks/vibraniumore",
+    "east": "project:blocks/vibraniumore",
+    "south": "project:blocks/vibraniumore",
+    "west": "project:blocks/vibraniumore",
+    "particle": "project:blocks/vibraniumore"
+  }
+}

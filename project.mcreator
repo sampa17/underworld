@@ -156,6 +156,33 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "craftbedrocktranspercer"
+    },
+    {
+      "name": "Vibranim",
+      "type": "item",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vibranim"
+    },
+    {
+      "name": "Vibraniumore",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vibraniumore"
+    },
+    {
+      "name": "Titanefuel",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "titanefuel"
     }
   ],
   "variable_elements": [],
@@ -165,13 +192,15 @@
       "block.project.surfacestone": "Surface Stone",
       "block.project.titane": "Titane Ore",
       "entity.project.undergolem": "Under Golem",
+      "item.project.vibranim": "Vibranium Crystal",
+      "item.project.undergolem": "Under Golem Spawn Egg",
+      "fluid.underwater": "Underwater",
+      "item.project.bedrocktracer": "World Switcher",
       "item.project.underwater_bucket": "Underwater Bucket",
       "block.project.understone": "Under Stone",
-      "item.project.undergolem": "Under Golem Spawn Egg",
       "item.project.bedrockdimension": "Bedrockdimension Portal Igniter",
       "item.project.ingottitane": "Titane Ingot",
-      "fluid.underwater": "Underwater",
-      "item.project.bedrocktracer": "Bedrock  switcher"
+      "block.project.vibraniumore": "Vibranium Ore"
     }
   },
   "workspaceSettings": {

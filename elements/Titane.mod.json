@@ -24,13 +24,13 @@
     "specialInfo": [],
     "hardness": 1.2,
     "resistance": 20.0,
-    "hasGravity": true,
+    "hasGravity": false,
     "creativeTab": {
       "value": "BUILDING_BLOCKS"
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": "CUSTOM:Ingottitane"
+      "value": ""
     },
     "dropAmount": 1,
     "isBeaconBase": false,
