@@ -1,0 +1,30 @@
+{
+  "group": "project",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "project:vibranim"
+    },
+    "1": {
+      "item": "project:vibranim"
+    },
+    "2": {
+      "item": "project:vibranim"
+    },
+    "4": {
+      "item": "project:titanestick"
+    },
+    "7": {
+      "item": "project:titanestick"
+    }
+  },
+  "result": {
+    "item": "project:vibraniumpickaxe",
+    "count": 1
+  }
+}

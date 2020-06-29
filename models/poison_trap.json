@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "advanced_traps_mod:blocks/mossy_cobblestone",
+    "up": "advanced_traps_mod:blocks/poison_top_2",
+    "north": "advanced_traps_mod:blocks/poison_trap_cote",
+    "east": "advanced_traps_mod:blocks/poison_trap_cote",
+    "south": "advanced_traps_mod:blocks/poison_trap_cote",
+    "west": "advanced_traps_mod:blocks/poison_trap_cote",
+    "particle": "advanced_traps_mod:blocks/mossy_cobblestone"
+  }
+}

@@ -11,11 +11,11 @@ import net.mcreator.project.itemgroup.TabmodItemGroup;
 import net.mcreator.project.ProjectModElements;
 
 @ProjectModElements.ModElement.Tag
-public class EcailleItem extends ProjectModElements.ModElement {
-	@ObjectHolder("project:ecaille")
+public class TitanestickItem extends ProjectModElements.ModElement {
+	@ObjectHolder("project:titanestick")
 	public static final Item block = null;
-	public EcailleItem(ProjectModElements instance) {
-		super(instance, 22);
+	public TitanestickItem(ProjectModElements instance) {
+		super(instance, 23);
 	}
 
 	@Override
@@ -25,7 +25,7 @@ public class EcailleItem extends ProjectModElements.ModElement {
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
 			super(new Item.Properties().group(TabmodItemGroup.tab).maxStackSize(64));
-			setRegistryName("ecaille");
+			setRegistryName("titanestick");
 		}
 
 		@Override

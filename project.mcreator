@@ -319,22 +319,130 @@
       }
     },
     {
-      "name": "Ecaille",
-      "type": "item",
+      "name": "Test",
+      "type": "overlay",
       "sortid": 22,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
-      "registry_name": "ecaille"
+      "registry_name": "test"
     },
     {
-      "name": "Primitif",
-      "type": "mob",
+      "name": "Titanestick",
+      "type": "item",
       "sortid": 23,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "primitif"
+      "registry_name": "titanestick"
+    },
+    {
+      "name": "Titanestickcraft",
+      "type": "recipe",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "titanestickcraft"
+    },
+    {
+      "name": "Vibraniumsword",
+      "type": "tool",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vibraniumsword"
+    },
+    {
+      "name": "Vibraniumpickaxe",
+      "type": "tool",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vibraniumpickaxe"
+    },
+    {
+      "name": "Vibraniumaxe",
+      "type": "tool",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vibraniumaxe"
+    },
+    {
+      "name": "Vibraniumshovel",
+      "type": "tool",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vibraniumshovel"
+    },
+    {
+      "name": "Vibraniumraftsword",
+      "type": "recipe",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vibraniumraftsword"
+    },
+    {
+      "name": "Vibraniumcraftpickaxe",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vibraniumcraftpickaxe"
+    },
+    {
+      "name": "Vibraniumcraftaxe",
+      "type": "recipe",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vibraniumcraftaxe"
+    },
+    {
+      "name": "Vibraniumcraftshovel",
+      "type": "recipe",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vibraniumcraftshovel"
+    },
+    {
+      "name": "Titanebloc",
+      "type": "block",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "titanebloc"
+    },
+    {
+      "name": "Titanebloccraft",
+      "type": "recipe",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "titanebloccraft"
+    },
+    {
+      "name": "Titaneblocversingot",
+      "type": "recipe",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "titaneblocversingot"
     }
   ],
   "variable_elements": [],
@@ -344,21 +452,24 @@
       "block.project.surfacestone": "Surface Stone",
       "block.project.titane": "Titane Ore",
       "entity.project.undergolem": "Under Golem",
+      "item.project.vibraniumaxe": "Vibranium Axe",
+      "block.project.titanebloc": "Titane Block ",
       "item.project.vibranim": "Vibranium Crystal",
-      "item.project.undergolem": "Under Golem Spawn Egg",
       "itemGroup.tabtabmod": "Underworld Mod",
+      "item.project.undergolem": "Under Golem Spawn Egg",
+      "item.project.titanestick": "Titane Stick",
       "fluid.underwater": "Underwater",
       "item.project.bedrocktracer": "World Switcher",
+      "item.project.vibraniumpickaxe": "Vibranium Pickaxe",
       "block.project.lampevibranium": "Vibranium Lamp",
+      "item.project.vibraniumshovel": "Vibranium Shovel",
       "item.project.underwater_bucket": "Underwater Bucket",
-      "entity.project.primitif": "Primitif",
       "block.project.understone": "Under Stone",
+      "item.project.vibraniumsword": "Vibranium Sword",
       "block.project.bombonne": "Vibranium Bombs",
       "item.project.bedrockdimension": "Bedrockdimension Portal Igniter",
-      "item.project.ecaille": "Primitif Scales",
       "item.project.ingottitane": "Titane Ingot",
-      "block.project.vibraniumore": "Vibranium Ore",
-      "item.project.primitif": "Primitif Spawn Egg"
+      "block.project.vibraniumore": "Vibranium Ore"
     }
   },
   "workspaceSettings": {

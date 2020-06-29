@@ -1,0 +1,24 @@
+{
+  "_fv": 8,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "vibraniumaxe",
+    "customModelName": "Normal",
+    "name": "Vibranium Axe",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmod"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 6,
+    "efficiency": 7.5,
+    "attackSpeed": 2.0,
+    "enchantability": 9,
+    "damageVsEntity": 4.0,
+    "usageCount": 500,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": []
+  }
+}

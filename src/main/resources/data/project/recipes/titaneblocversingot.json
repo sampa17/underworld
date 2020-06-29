@@ -1,0 +1,16 @@
+{
+  "group": "project",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "project:titanebloc"
+    }
+  },
+  "result": {
+    "item": "project:ingottitane",
+    "count": 9
+  }
+}

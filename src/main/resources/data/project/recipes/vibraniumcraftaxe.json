@@ -1,0 +1,30 @@
+{
+  "group": "project",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    "4 "
+  ],
+  "key": {
+    "0": {
+      "item": "project:vibranim"
+    },
+    "1": {
+      "item": "project:vibranim"
+    },
+    "2": {
+      "item": "project:titanestick"
+    },
+    "3": {
+      "item": "project:vibranim"
+    },
+    "4": {
+      "item": "project:titanestick"
+    }
+  },
+  "result": {
+    "item": "project:vibraniumaxe",
+    "count": 1
+  }
+}

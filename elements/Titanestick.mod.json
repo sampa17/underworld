@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "ecaille",
+    "texture": "titanestick",
     "customModelName": "Normal",
-    "name": "Primitif Scales",
+    "name": "Titane Stick",
     "creativeTab": {
       "value": "CUSTOM:Tabmod"
     },

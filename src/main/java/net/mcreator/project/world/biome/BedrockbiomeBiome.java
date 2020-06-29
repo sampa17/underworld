@@ -31,7 +31,6 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.project.entity.UndergolemEntity;
-import net.mcreator.project.entity.PrimitifEntity;
 import net.mcreator.project.block.UnderstoneBlock;
 import net.mcreator.project.ProjectModElements;
 
@@ -77,7 +76,6 @@ public class BedrockbiomeBiome extends ProjectModElements.ModElement {
 									.setSapling((net.minecraftforge.common.IPlantable) Blocks.JUNGLE_SAPLING).build())
 					.withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(new AtSurfaceWithExtraConfig(1, 0.1F, 1))));
 			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(UndergolemEntity.entity, 15, 1, 5));
-			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(PrimitifEntity.entity, 15, 1, 5));
 		}
 	}
 

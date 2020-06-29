@@ -1,0 +1,24 @@
+{
+  "_fv": 8,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "vibraniumshovel",
+    "customModelName": "Normal",
+    "name": "Vibranium Shovel",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "toolType": "Spade",
+    "harvestLevel": 8,
+    "efficiency": 8.0,
+    "attackSpeed": 2.0,
+    "enchantability": 9,
+    "damageVsEntity": 5.0,
+    "usageCount": 500,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": []
+  }
+}
