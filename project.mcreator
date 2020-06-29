@@ -443,6 +443,57 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "titaneblocversingot"
+    },
+    {
+      "name": "Titanehammer",
+      "type": "tool",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "titanehammer"
+    },
+    {
+      "name": "Titanehammercraft",
+      "type": "recipe",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "titanehammercraft"
+    },
+    {
+      "name": "Titanehammerpro",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "titanehammerpro",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -469,7 +520,8 @@
       "block.project.bombonne": "Vibranium Bombs",
       "item.project.bedrockdimension": "Bedrockdimension Portal Igniter",
       "item.project.ingottitane": "Titane Ingot",
-      "block.project.vibraniumore": "Vibranium Ore"
+      "block.project.vibraniumore": "Vibranium Ore",
+      "item.project.titanehammer": "Titane Hammer"
     }
   },
   "workspaceSettings": {

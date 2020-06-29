@@ -5,21 +5,24 @@
     "recipeType": "Crafting",
     "xpReward": 0.0,
     "cookingTime": 200,
-    "recipeRetstackSize": 2,
+    "recipeRetstackSize": 1,
     "group": "",
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "CUSTOM:Ingottitane"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Ingottitane"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Ingottitane"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Ingottitane"
+      },
+      {
+        "value": "CUSTOM:Ingottitane"
       },
       {
         "value": "CUSTOM:Ingottitane"
@@ -28,19 +31,16 @@
         "value": ""
       },
       {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:Ingottitane"
+        "value": "Items.STICK"
       },
       {
         "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Titanestick"
+      "value": "CUSTOM:Titanehammer"
     },
-    "name": "titanestickcraft",
+    "name": "titanehammercraft",
     "namespace": "mod"
   }
 }

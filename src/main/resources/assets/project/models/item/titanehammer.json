@@ -1,0 +1,7 @@
+{
+  "parent": "project:custom/hammerr",
+  "textures": {
+    "1": "project:blocks/planks_big_oak",
+    "2": "project:blocks/titanebloc"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "planks_big_oak",
+        "2": "titanebloc"
+      },
+      "name": "default"
+    }
+  }
+}

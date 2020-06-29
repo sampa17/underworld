@@ -1,0 +1,26 @@
+{
+  "_fv": 8,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "hhh",
+    "customModelName": "hammerr:default",
+    "name": "Titane Hammer",
+    "specialInfo": [
+      "Pour casser la bedrock . [ Left Click ]"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmod"
+    },
+    "toolType": "Special",
+    "harvestLevel": 3,
+    "efficiency": 3.0,
+    "attackSpeed": 2.0,
+    "enchantability": 6,
+    "damageVsEntity": 4.0,
+    "usageCount": 100,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": []
+  }
+}
