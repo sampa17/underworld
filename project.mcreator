@@ -696,6 +696,59 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "titanebarriercraft"
+    },
+    {
+      "name": "Caracornmeat1",
+      "type": "food",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "caracornmeat_1"
+    },
+    {
+      "name": "Caracornmeat1FoodEaten",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "caracornmeat_1_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CaracornMeat2",
+      "type": "food",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "caracorn_meat_2"
+    },
+    {
+      "name": "Capricorm",
+      "type": "mob",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "capricorm"
+    },
+    {
+      "name": "Caracornfoodgocooked",
+      "type": "recipe",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "caracornfoodgocooked"
     }
   ],
   "variable_elements": [],
@@ -711,6 +764,7 @@
       "item.project.undergolem": "Under Golem Spawn Egg",
       "itemGroup.tabtabmod": "Underworld Mod",
       "item.project.titaneaxe": "Titane Axe",
+      "item.project.caracornmeat_1": "Caracorn Meat",
       "item.project.titanestick": "Titane Stick",
       "item.project.vibraniumpickaxe": "Vibranium Pickaxe",
       "block.project.lampevibranium": "Vibranium Lamp",
@@ -722,17 +776,20 @@
       "block.project.titanebarrier": "Titane Barrier",
       "item.project.bedrockdimension": "Bedrockdimension Portal Igniter",
       "item.project.titanehammer": "Titane Hammer",
+      "entity.project.capricorm": "Caracorn",
       "block.project.titanebloc": "Titane Block ",
       "item.project.ingottitanearmor_armorhelmet": "Titane Helmet",
       "item.project.squeletteperdu": "Lost Skeleton Spawn Egg",
       "item.project.vibranim": "Vibranium Crystal",
       "item.project.osuse": "Worn Bone",
+      "item.project.caracorn_meat_2": "Cooked Caracorn Meat ",
       "item.project.ingottitanearmor_armorboots": "Titane boots",
       "fluid.underwater": "Underwater",
       "item.project.bedrocktracer": "World Switcher",
       "item.project.vibraniumshovel": "Vibranium Shovel",
       "item.project.underwater_bucket": "Underwater Bucket",
       "entity.project.squeletteperdu": "Lost Skeleton",
+      "item.project.capricorm": "Caracorn Spawn Egg",
       "block.project.vibraniumore": "Vibranium Ore",
       "item.project.ingottitane": "Titane Ingot",
       "item.project.titanesword": "Titane Sword"

@@ -1,0 +1,25 @@
+{
+  "_fv": 8,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "viandepascuite",
+    "customModelName": "Normal",
+    "name": "Caracorn Meat",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmod"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 1,
+    "saturation": 0.1,
+    "eatingSpeed": 32,
+    "forDogs": true,
+    "isAlwaysEdible": false,
+    "animation": "eat",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "Caracornmeat1FoodEaten"
+    }
+  }
+}

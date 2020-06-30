@@ -1,0 +1,22 @@
+{
+  "_fv": 8,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "viandecuite",
+    "customModelName": "Normal",
+    "name": "Cooked Caracorn Meat ",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmod"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 5,
+    "saturation": 0.5,
+    "eatingSpeed": 40,
+    "forDogs": true,
+    "isAlwaysEdible": false,
+    "animation": "eat",
+    "hasGlow": false
+  }
+}

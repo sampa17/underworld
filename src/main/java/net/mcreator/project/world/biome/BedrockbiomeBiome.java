@@ -32,6 +32,7 @@ import net.minecraft.block.Block;
 
 import net.mcreator.project.entity.UndergolemEntity;
 import net.mcreator.project.entity.SqueletteperduEntity;
+import net.mcreator.project.entity.CapricormEntity;
 import net.mcreator.project.block.UnderstoneBlock;
 import net.mcreator.project.ProjectModElements;
 
@@ -78,6 +79,7 @@ public class BedrockbiomeBiome extends ProjectModElements.ModElement {
 					.withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(new AtSurfaceWithExtraConfig(1, 0.1F, 1))));
 			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(UndergolemEntity.entity, 15, 1, 5));
 			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(SqueletteperduEntity.entity, 15, 1, 5));
+			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(CapricormEntity.entity, 15, 1, 5));
 		}
 	}
 
