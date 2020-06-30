@@ -79,7 +79,7 @@ public class VibraniumoreBlock extends ProjectModElements.ModElement {
 				if (blockAt.getBlock() == TitaneBlock.block.getDefaultState().getBlock())
 					blockCriteria = true;
 				return blockCriteria;
-			}), block.getDefaultState(), 5)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(6, 0, 0, 64))));
+			}), block.getDefaultState(), 8)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(8, 0, 0, 64))));
 		}
 	}
 }

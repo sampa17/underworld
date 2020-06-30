@@ -20,6 +20,8 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.passive.IronGolemEntity;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
@@ -55,7 +57,7 @@ public class UndergolemEntity extends ProjectModElements.ModElement {
 	@Override
 	public void initElements() {
 		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER).setShouldReceiveVelocityUpdates(true)
-				.setTrackingRange(63).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire().size(0.6f, 1.95f))
+				.setTrackingRange(60).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire().size(0.6f, 1.95f))
 						.build("undergolem").setRegistryName("undergolem");
 		elements.entities.add(() -> entity);
 		elements.items.add(
@@ -104,14 +106,15 @@ public class UndergolemEntity extends ProjectModElements.ModElement {
 			super.registerGoals();
 			this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.5, false));
 			this.goalSelector.addGoal(2, new RandomWalkingGoal(this, 1));
-			this.targetSelector.addGoal(3, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
+			this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
 			this.goalSelector.addGoal(4, new LookRandomlyGoal(this));
 			this.goalSelector.addGoal(5, new SwimGoal(this));
 			this.goalSelector.addGoal(6, new MeleeAttackGoal(this, 1.5, false));
-			this.targetSelector.addGoal(7, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
+			this.targetSelector.addGoal(7, new HurtByTargetGoal(this));
 			this.goalSelector.addGoal(8, new RandomWalkingGoal(this, 0.8));
 			this.goalSelector.addGoal(9, new LookRandomlyGoal(this));
-			this.targetSelector.addGoal(10, new NearestAttackableTargetGoal(this, UndergolemEntity.CustomEntity.class, false, false));
+			this.targetSelector.addGoal(10, new NearestAttackableTargetGoal(this, PlayerEntity.class, false, false));
+			this.targetSelector.addGoal(11, new NearestAttackableTargetGoal(this, IronGolemEntity.class, false, false));
 		}
 
 		@Override
@@ -155,7 +158,7 @@ public class UndergolemEntity extends ProjectModElements.ModElement {
 		protected void registerAttributes() {
 			super.registerAttributes();
 			if (this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED) != null)
-				this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.4);
+				this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.2);
 			if (this.getAttribute(SharedMonsterAttributes.MAX_HEALTH) != null)
 				this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(100);
 			if (this.getAttribute(SharedMonsterAttributes.ARMOR) != null)

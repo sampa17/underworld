@@ -59,8 +59,9 @@ public class AccedbedrockProcedure extends ProjectModElements.ModElement {
 		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
 		if ((((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.BEDROCK.getDefaultState().getBlock())
-				&& (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
-						.getItem() == new ItemStack(BedrocktracerItem.block, (int) (1)).getItem()))) {
+				&& (((entity.dimension.getId()) == (0))
+						&& (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
+								.getItem() == new ItemStack(BedrocktracerItem.block, (int) (1)).getItem())))) {
 			{
 				Entity _ent = entity;
 				if (!_ent.world.isRemote && _ent instanceof ServerPlayerEntity) {

@@ -16,6 +16,9 @@
     },
     "spawnWorldTypes": [
       "CUSTOM:Bedrockdimension"
-    ]
+    ],
+    "onEntityCollides": {
+      "name": "UnderwaterMobplayerCollidesBlock"
+    }
   }
 }

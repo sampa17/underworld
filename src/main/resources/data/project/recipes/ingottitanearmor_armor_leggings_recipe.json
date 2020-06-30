@@ -1,0 +1,36 @@
+{
+  "group": "project",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "project:ingottitane"
+    },
+    "1": {
+      "item": "project:ingottitane"
+    },
+    "2": {
+      "item": "project:ingottitane"
+    },
+    "3": {
+      "item": "project:ingottitane"
+    },
+    "5": {
+      "item": "project:ingottitane"
+    },
+    "6": {
+      "item": "project:ingottitane"
+    },
+    "8": {
+      "item": "project:ingottitane"
+    }
+  },
+  "result": {
+    "item": "project:ingottitanearmor_armorlegs",
+    "count": 1
+  }
+}

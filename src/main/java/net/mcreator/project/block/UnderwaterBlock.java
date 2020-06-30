@@ -21,6 +21,7 @@ import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.ChunkGenerator;
 import net.minecraft.world.dimension.DimensionType;
 import net.minecraft.world.biome.Biome;
+import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
@@ -29,13 +30,16 @@ import net.minecraft.item.Item;
 import net.minecraft.item.BucketItem;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.fluid.FlowingFluid;
+import net.minecraft.entity.Entity;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.FlowingFluidBlock;
+import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.project.world.dimension.BedrockdimensionDimension;
+import net.mcreator.project.procedures.UnderwaterMobplayerCollidesBlockProcedure;
 import net.mcreator.project.itemgroup.TabmodItemGroup;
 import net.mcreator.project.ProjectModElements;
 
@@ -76,6 +80,18 @@ public class UnderwaterBlock extends ProjectModElements.ModElement {
 		still = (FlowingFluid) new ForgeFlowingFluid.Source(fluidproperties).setRegistryName("underwater");
 		flowing = (FlowingFluid) new ForgeFlowingFluid.Flowing(fluidproperties).setRegistryName("underwater_flowing");
 		elements.blocks.add(() -> new FlowingFluidBlock(still, Block.Properties.create(Material.WATER)) {
+			@Override
+			public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
+				super.onEntityCollision(state, world, pos, entity);
+				int x = pos.getX();
+				int y = pos.getY();
+				int z = pos.getZ();
+				{
+					java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+					$_dependencies.put("entity", entity);
+					UnderwaterMobplayerCollidesBlockProcedure.executeProcedure($_dependencies);
+				}
+			}
 		}.setRegistryName("underwater"));
 		elements.items.add(() -> new BucketItem(still, new Item.Properties().containerItem(Items.BUCKET).maxStackSize(1).group(TabmodItemGroup.tab))
 				.setRegistryName("underwater_bucket"));

@@ -1,0 +1,39 @@
+{
+  "group": "project",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "project:ingottitane"
+    },
+    "2": {
+      "item": "project:ingottitane"
+    },
+    "3": {
+      "item": "project:ingottitane"
+    },
+    "4": {
+      "item": "project:ingottitane"
+    },
+    "5": {
+      "item": "project:ingottitane"
+    },
+    "6": {
+      "item": "project:ingottitane"
+    },
+    "7": {
+      "item": "project:ingottitane"
+    },
+    "8": {
+      "item": "project:ingottitane"
+    }
+  },
+  "result": {
+    "item": "project:ingottitanearmor_armorbody",
+    "count": 1
+  }
+}
