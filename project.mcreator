@@ -496,13 +496,13 @@
       }
     },
     {
-      "name": "Rfgbsx",
+      "name": "Dgvsw",
       "type": "block",
       "sortid": 39,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "rfgbsx"
+      "registry_name": "dgvsw"
     }
   ],
   "variable_elements": [],
@@ -526,9 +526,9 @@
       "item.project.underwater_bucket": "Underwater Bucket",
       "block.project.understone": "Under Stone",
       "item.project.vibraniumsword": "Vibranium Sword",
-      "block.project.rfgbsx": "Rfgbsx",
       "block.project.bombonne": "Vibranium Bombs",
       "item.project.bedrockdimension": "Bedrockdimension Portal Igniter",
+      "block.project.dgvsw": "Dgvsw",
       "item.project.ingottitane": "Titane Ingot",
       "block.project.vibraniumore": "Vibranium Ore",
       "item.project.titanehammer": "Titane Hammer"

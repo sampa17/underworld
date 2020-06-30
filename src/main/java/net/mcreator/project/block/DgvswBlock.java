@@ -19,10 +19,10 @@ import java.util.List;
 import java.util.Collections;
 
 @ProjectModElements.ModElement.Tag
-public class RfgbsxBlock extends ProjectModElements.ModElement {
-	@ObjectHolder("project:rfgbsx")
+public class DgvswBlock extends ProjectModElements.ModElement {
+	@ObjectHolder("project:dgvsw")
 	public static final Block block = null;
-	public RfgbsxBlock(ProjectModElements instance) {
+	public DgvswBlock(ProjectModElements instance) {
 		super(instance, 39);
 	}
 
@@ -34,7 +34,7 @@ public class RfgbsxBlock extends ProjectModElements.ModElement {
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ROCK).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).lightValue(0));
-			setRegistryName("rfgbsx");
+			setRegistryName("dgvsw");
 		}
 
 		@Override
