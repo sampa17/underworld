@@ -704,8 +704,8 @@
     "en_us": {
       "block.project.surfacestone": "Surface Stone",
       "block.project.titane": "Titane Ore",
-      "entity.project.undergolem": "Under Golem",
       "item.project.vibraniumaxe": "Vibranium Axe",
+      "entity.project.undergolem": "Under Golem",
       "item.project.ingottitanearmor_armorbody": "Titane Chesplate",
       "item.project.ingottitanearmor_armorlegs": "Titane Leggings",
       "item.project.undergolem": "Under Golem Spawn Egg",
