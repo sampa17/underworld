@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "project:blocks/edgrd",
+    "up": "project:blocks/edgrd",
+    "north": "project:blocks/edgrd",
+    "east": "project:blocks/edgrd",
+    "south": "project:blocks/edgrd",
+    "west": "project:blocks/edgrd",
+    "particle": "project:blocks/edgrd"
+  }
+}
