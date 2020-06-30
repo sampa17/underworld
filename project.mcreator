@@ -808,8 +808,8 @@
     "en_us": {
       "block.project.surfacestone": "Surface Stone",
       "block.project.titane": "Titane Ore",
-      "item.project.vibraniumaxe": "Vibranium Axe",
       "entity.project.undergolem": "Under Golem",
+      "item.project.vibraniumaxe": "Vibranium Axe",
       "item.project.ingottitanearmor_armorbody": "Titane Chesplate",
       "item.project.ingottitanearmor_armorlegs": "Titane Leggings",
       "item.project.undergolem": "Under Golem Spawn Egg",
@@ -837,7 +837,7 @@
       "item.project.ingottitanearmor_armorboots": "Titane boots",
       "fluid.underwater": "Underwater",
       "item.project.bedrocktracer": "World Switcher",
-      "item.project.poudremagique": "Poudre Mystérieuse",
+      "item.project.poudremagique": "Mysterie Powder",
       "item.project.vibraniumshovel": "Vibranium Shovel",
       "item.project.underwater_bucket": "Underwater Bucket",
       "entity.project.squeletteperdu": "Lost Skeleton",
