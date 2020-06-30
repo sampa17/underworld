@@ -1,0 +1,30 @@
+{
+  "group": "project",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    "4 "
+  ],
+  "key": {
+    "0": {
+      "item": "project:ingottitane"
+    },
+    "1": {
+      "item": "project:ingottitane"
+    },
+    "2": {
+      "item": "minecraft:stick"
+    },
+    "3": {
+      "item": "project:ingottitane"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "project:titaneaxe",
+    "count": 1
+  }
+}

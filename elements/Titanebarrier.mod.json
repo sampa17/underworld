@@ -2,25 +2,25 @@
   "_fv": 8,
   "_type": "block",
   "definition": {
-    "texture": "edgrd",
+    "texture": "iron_bars",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
-    "renderType": 10,
-    "customModelName": "Normal",
+    "renderType": 2,
+    "customModelName": "rat_cage_bars:default",
     "rotationMode": 0,
-    "hasTransparency": false,
-    "connectedSides": false,
-    "transparencyType": "SOLID",
+    "hasTransparency": true,
+    "connectedSides": true,
+    "transparencyType": "TRANSLUCENT",
     "mx": 0.0,
     "my": 0.0,
     "mz": 0.0,
-    "Mx": 1.0,
+    "Mx": 0.1,
     "My": 1.0,
     "Mz": 1.0,
-    "name": "Dgvsw",
+    "name": "Titane Barrier",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -37,9 +37,9 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canProvidePower": false,
-    "lightOpacity": 255,
+    "lightOpacity": 0,
     "material": {
-      "value": "ROCK"
+      "value": "IRON"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -57,7 +57,7 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "GROUND"
+      "value": "METAL"
     },
     "luminance": 0.0,
     "unbreakable": false,
@@ -81,11 +81,7 @@
     "inventoryInSlotIDs": [],
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
-    "blocksToReplace": [
-      {
-        "value": "Blocks.STONE"
-      }
-    ],
+    "blocksToReplace": [],
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,

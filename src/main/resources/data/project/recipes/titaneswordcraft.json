@@ -1,0 +1,24 @@
+{
+  "group": "project",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "project:ingottitane"
+    },
+    "1": {
+      "item": "project:ingottitane"
+    },
+    "2": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "project:titanesword",
+    "count": 1
+  }
+}

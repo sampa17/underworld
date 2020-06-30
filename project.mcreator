@@ -590,13 +590,112 @@
       }
     },
     {
-      "name": "Dgvsw",
-      "type": "block",
-      "sortid": 39,
+      "name": "Osuse",
+      "type": "item",
+      "sortid": 46,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "dgvsw"
+      "registry_name": "osuse"
+    },
+    {
+      "name": "Squeletteperdu",
+      "type": "mob",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "squeletteperdu"
+    },
+    {
+      "name": "Titanesword",
+      "type": "tool",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "titanesword"
+    },
+    {
+      "name": "TitanePickaxe",
+      "type": "tool",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "titane_pickaxe"
+    },
+    {
+      "name": "Titaneaxe",
+      "type": "tool",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "titaneaxe"
+    },
+    {
+      "name": "TitaneShovel",
+      "type": "tool",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "titane_shovel"
+    },
+    {
+      "name": "Titaneswordcraft",
+      "type": "recipe",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "titaneswordcraft"
+    },
+    {
+      "name": "Titanepickaxecraft",
+      "type": "recipe",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "titanepickaxecraft"
+    },
+    {
+      "name": "Titaneaxecraft",
+      "type": "recipe",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "titaneaxecraft"
+    },
+    {
+      "name": "Titaneshovelcraft",
+      "type": "recipe",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "titaneshovelcraft"
+    },
+    {
+      "name": "Titanebarrier",
+      "type": "block",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "titanebarrier"
+    },
+    {
+      "name": "Titanebarriercraft",
+      "type": "recipe",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "titanebarriercraft"
     }
   ],
   "variable_elements": [],
@@ -605,26 +704,38 @@
     "en_us": {
       "block.project.surfacestone": "Surface Stone",
       "block.project.titane": "Titane Ore",
-      "item.project.vibraniumaxe": "Vibranium Axe",
       "entity.project.undergolem": "Under Golem",
-      "itemGroup.tabtabmod": "Underworld Mod",
+      "item.project.vibraniumaxe": "Vibranium Axe",
+      "item.project.ingottitanearmor_armorbody": "Titane Chesplate",
+      "item.project.ingottitanearmor_armorlegs": "Titane Leggings",
       "item.project.undergolem": "Under Golem Spawn Egg",
+      "itemGroup.tabtabmod": "Underworld Mod",
+      "item.project.titaneaxe": "Titane Axe",
       "item.project.titanestick": "Titane Stick",
       "item.project.vibraniumpickaxe": "Vibranium Pickaxe",
       "block.project.lampevibranium": "Vibranium Lamp",
+      "item.project.titane_pickaxe": "Titane Pickaxe",
+      "item.project.titane_shovel": "Titane Shovel",
       "block.project.understone": "Under Stone",
       "item.project.vibraniumsword": "Vibranium Sword",
       "block.project.bombonne": "Vibranium Bombs",
+      "block.project.titanebarrier": "Titane Barrier",
       "item.project.bedrockdimension": "Bedrockdimension Portal Igniter",
       "item.project.titanehammer": "Titane Hammer",
       "block.project.titanebloc": "Titane Block ",
+      "item.project.ingottitanearmor_armorhelmet": "Titane Helmet",
+      "item.project.squeletteperdu": "Lost Skeleton Spawn Egg",
       "item.project.vibranim": "Vibranium Crystal",
+      "item.project.osuse": "Worn Bone",
+      "item.project.ingottitanearmor_armorboots": "Titane boots",
       "fluid.underwater": "Underwater",
       "item.project.bedrocktracer": "World Switcher",
       "item.project.vibraniumshovel": "Vibranium Shovel",
       "item.project.underwater_bucket": "Underwater Bucket",
+      "entity.project.squeletteperdu": "Lost Skeleton",
       "block.project.vibraniumore": "Vibranium Ore",
-      "item.project.ingottitane": "Titane Ingot"
+      "item.project.ingottitane": "Titane Ingot",
+      "item.project.titanesword": "Titane Sword"
     }
   },
   "workspaceSettings": {

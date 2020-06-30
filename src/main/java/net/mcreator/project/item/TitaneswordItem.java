@@ -12,40 +12,40 @@ import net.mcreator.project.itemgroup.TabmodItemGroup;
 import net.mcreator.project.ProjectModElements;
 
 @ProjectModElements.ModElement.Tag
-public class VibraniumswordItem extends ProjectModElements.ModElement {
-	@ObjectHolder("project:vibraniumsword")
+public class TitaneswordItem extends ProjectModElements.ModElement {
+	@ObjectHolder("project:titanesword")
 	public static final Item block = null;
-	public VibraniumswordItem(ProjectModElements instance) {
-		super(instance, 25);
+	public TitaneswordItem(ProjectModElements instance) {
+		super(instance, 47);
 	}
 
 	@Override
 	public void initElements() {
 		elements.items.add(() -> new SwordItem(new IItemTier() {
 			public int getMaxUses() {
-				return 500;
+				return 300;
 			}
 
 			public float getEfficiency() {
-				return 8f;
+				return 6.5f;
 			}
 
 			public float getAttackDamage() {
-				return 5f;
+				return 3.1f;
 			}
 
 			public int getHarvestLevel() {
-				return 1;
+				return 5;
 			}
 
 			public int getEnchantability() {
-				return 9;
+				return 7;
 			}
 
 			public Ingredient getRepairMaterial() {
 				return Ingredient.EMPTY;
 			}
-		}, 3, -2f, new Item.Properties().group(TabmodItemGroup.tab)) {
-		}.setRegistryName("vibraniumsword"));
+		}, 3, -2.5f, new Item.Properties().group(TabmodItemGroup.tab)) {
+		}.setRegistryName("titanesword"));
 	}
 }
