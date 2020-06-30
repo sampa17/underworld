@@ -18,7 +18,6 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
@@ -37,6 +36,7 @@ import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
 
+import net.mcreator.project.itemgroup.TabmodItemGroup;
 import net.mcreator.project.item.Caracornmeat1Item;
 import net.mcreator.project.ProjectModElements;
 
@@ -57,8 +57,8 @@ public class CapricormEntity extends ProjectModElements.ModElement {
 				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire().size(0.6f, 1.8f))
 						.build("capricorm").setRegistryName("capricorm");
 		elements.entities.add(() -> entity);
-		elements.items
-				.add(() -> new SpawnEggItem(entity, -16250872, -6056192, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("capricorm"));
+		elements.items.add(
+				() -> new SpawnEggItem(entity, -16250872, -6056192, new Item.Properties().group(TabmodItemGroup.tab)).setRegistryName("capricorm"));
 	}
 
 	@Override

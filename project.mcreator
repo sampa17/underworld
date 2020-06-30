@@ -749,6 +749,57 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "caracornfoodgocooked"
+    },
+    {
+      "name": "Poudremagique",
+      "type": "item",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "poudremagique"
+    },
+    {
+      "name": "Craftpoudre",
+      "type": "recipe",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "craftpoudre"
+    },
+    {
+      "name": "Poudreprocedure",
+      "type": "procedure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "poudreprocedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -757,8 +808,8 @@
     "en_us": {
       "block.project.surfacestone": "Surface Stone",
       "block.project.titane": "Titane Ore",
-      "entity.project.undergolem": "Under Golem",
       "item.project.vibraniumaxe": "Vibranium Axe",
+      "entity.project.undergolem": "Under Golem",
       "item.project.ingottitanearmor_armorbody": "Titane Chesplate",
       "item.project.ingottitanearmor_armorlegs": "Titane Leggings",
       "item.project.undergolem": "Under Golem Spawn Egg",
@@ -786,6 +837,7 @@
       "item.project.ingottitanearmor_armorboots": "Titane boots",
       "fluid.underwater": "Underwater",
       "item.project.bedrocktracer": "World Switcher",
+      "item.project.poudremagique": "Poudre Mystérieuse",
       "item.project.vibraniumshovel": "Vibranium Shovel",
       "item.project.underwater_bucket": "Underwater Bucket",
       "entity.project.squeletteperdu": "Lost Skeleton",
