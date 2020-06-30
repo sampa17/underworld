@@ -496,55 +496,13 @@
       }
     },
     {
-      "name": "IngottitanearmorArmor",
-      "type": "armor",
-      "sortid": 39,
+      "name": "Admintp",
+      "type": "command",
+      "sortid": 45,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "ingottitanearmor_armor",
-      "metadata": {
-        "eh": true,
-        "el": true,
-        "eb": true,
-        "ec": true
-      }
-    },
-    {
-      "name": "IngottitanearmorArmorHelmetRecipe",
-      "type": "recipe",
-      "sortid": 40,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "ingottitanearmor_armor_helmet_recipe"
-    },
-    {
-      "name": "IngottitanearmorArmorBodyRecipe",
-      "type": "recipe",
-      "sortid": 41,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "ingottitanearmor_armor_body_recipe"
-    },
-    {
-      "name": "IngottitanearmorArmorLeggingsRecipe",
-      "type": "recipe",
-      "sortid": 42,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "ingottitanearmor_armor_leggings_recipe"
-    },
-    {
-      "name": "IngottitanearmorArmorBootsRecipe",
-      "type": "recipe",
-      "sortid": 43,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "ingottitanearmor_armor_boots_recipe"
+      "registry_name": "admintp"
     },
     {
       "name": "UnderwaterMobplayerCollidesBlock",
@@ -581,13 +539,64 @@
       }
     },
     {
-      "name": "Admintp",
-      "type": "command",
-      "sortid": 45,
+      "name": "IngottitanearmorArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "admintp"
+      "registry_name": "ingottitanearmor_armor_helmet_recipe"
+    },
+    {
+      "name": "IngottitanearmorArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ingottitanearmor_armor_leggings_recipe"
+    },
+    {
+      "name": "IngottitanearmorArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ingottitanearmor_armor_body_recipe"
+    },
+    {
+      "name": "IngottitanearmorArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ingottitanearmor_armor_boots_recipe"
+    },
+    {
+      "name": "IngottitanearmorArmor",
+      "type": "armor",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ingottitanearmor_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "Dgvsw",
+      "type": "block",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dgvsw"
     }
   ],
   "variable_elements": [],
@@ -598,8 +607,6 @@
       "block.project.titane": "Titane Ore",
       "item.project.vibraniumaxe": "Vibranium Axe",
       "entity.project.undergolem": "Under Golem",
-      "item.project.ingottitanearmor_armorbody": "Titane Chesplate",
-      "item.project.ingottitanearmor_armorlegs": "Titane Leggings",
       "itemGroup.tabtabmod": "Underworld Mod",
       "item.project.undergolem": "Under Golem Spawn Egg",
       "item.project.titanestick": "Titane Stick",
@@ -611,9 +618,7 @@
       "item.project.bedrockdimension": "Bedrockdimension Portal Igniter",
       "item.project.titanehammer": "Titane Hammer",
       "block.project.titanebloc": "Titane Block ",
-      "item.project.ingottitanearmor_armorhelmet": "Titane Helmet",
       "item.project.vibranim": "Vibranium Crystal",
-      "item.project.ingottitanearmor_armorboots": "Titane boots",
       "fluid.underwater": "Underwater",
       "item.project.bedrocktracer": "World Switcher",
       "item.project.vibraniumshovel": "Vibranium Shovel",
