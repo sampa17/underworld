@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "project:blocks/concrete_powder_black",
+    "up": "project:blocks/concrete_powder_black",
+    "north": "project:blocks/concrete_powder_black",
+    "east": "project:blocks/concrete_powder_black",
+    "south": "project:blocks/concrete_powder_black",
+    "west": "project:blocks/concrete_powder_black",
+    "particle": "project:blocks/concrete_powder_black"
+  }
+}

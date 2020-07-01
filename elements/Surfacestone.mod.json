@@ -30,7 +30,7 @@
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": "Blocks.TALLGRASS#0"
+      "value": "Items.STICK"
     },
     "dropAmount": 1,
     "isBeaconBase": false,

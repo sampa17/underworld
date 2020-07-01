@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "project:blocks/vibraniumore",
-    "up": "project:blocks/vibraniumore",
-    "north": "project:blocks/vibraniumore",
-    "east": "project:blocks/vibraniumore",
-    "south": "project:blocks/vibraniumore",
-    "west": "project:blocks/vibraniumore",
-    "particle": "project:blocks/vibraniumore"
+    "down": "project:blocks/diamond_ore",
+    "up": "project:blocks/diamond_ore",
+    "north": "project:blocks/diamond_ore",
+    "east": "project:blocks/diamond_ore",
+    "south": "project:blocks/diamond_ore",
+    "west": "project:blocks/diamond_ore",
+    "particle": "project:blocks/diamond_ore"
   }
 }

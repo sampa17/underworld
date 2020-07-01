@@ -16,13 +16,13 @@ import net.minecraft.world.dimension.DimensionType;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.FallingBlock;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
@@ -35,11 +35,11 @@ import java.util.List;
 import java.util.Collections;
 
 @ProjectModElements.ModElement.Tag
-public class SurfacestoneBlock extends ProjectModElements.ModElement {
-	@ObjectHolder("project:surfacestone")
+public class UndersandBlock extends ProjectModElements.ModElement {
+	@ObjectHolder("project:undersand")
 	public static final Block block = null;
-	public SurfacestoneBlock(ProjectModElements instance) {
-		super(instance, 8);
+	public UndersandBlock(ProjectModElements instance) {
+		super(instance, 64);
 	}
 
 	@Override
@@ -49,8 +49,8 @@ public class SurfacestoneBlock extends ProjectModElements.ModElement {
 	}
 	public static class CustomBlock extends FallingBlock {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).lightValue(0));
-			setRegistryName("surfacestone");
+			super(Block.Properties.create(Material.SAND).sound(SoundType.SAND).hardnessAndResistance(1f, 10f).lightValue(0));
+			setRegistryName("undersand");
 		}
 
 		@Override
@@ -58,7 +58,7 @@ public class SurfacestoneBlock extends ProjectModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(Items.STICK, (int) (1)));
+			return Collections.singletonList(new ItemStack(this, 1));
 		}
 	}
 	@Override
@@ -75,9 +75,9 @@ public class SurfacestoneBlock extends ProjectModElements.ModElement {
 						return false;
 					return super.place(world, generator, rand, pos, config);
 				}
-			}.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.create("surfacestone", "surfacestone", blockAt -> {
+			}.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.create("undersand", "undersand", blockAt -> {
 				boolean blockCriteria = false;
-				if (blockAt.getBlock() == UnderstoneBlock.block.getDefaultState().getBlock())
+				if (blockAt.getBlock() == Blocks.BEDROCK.getDefaultState().getBlock())
 					blockCriteria = true;
 				return blockCriteria;
 			}), block.getDefaultState(), 8)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(10, 0, 0, 64))));

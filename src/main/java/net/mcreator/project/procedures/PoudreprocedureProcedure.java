@@ -12,7 +12,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.block.Blocks;
 
-import net.mcreator.project.item.OsuseItem;
+import net.mcreator.project.item.PoudremagiqueItem;
 import net.mcreator.project.ProjectModElements;
 
 @ProjectModElements.ModElement.Tag
@@ -50,9 +50,12 @@ public class PoudreprocedureProcedure extends ProjectModElements.ModElement {
 		World world = (World) dependencies.get("world");
 		if ((((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.BEDROCK.getDefaultState().getBlock())
 				&& (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
-						.getItem() == new ItemStack(OsuseItem.block, (int) (1)).getItem()))) {
+						.getItem() == new ItemStack(PoudremagiqueItem.block, (int) (1)).getItem()))) {
 			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.getDefaultState(), 3);
 			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.GRASS_BLOCK.getDefaultState(), 3);
+			if (entity instanceof PlayerEntity)
+				((PlayerEntity) entity).inventory.clearMatchingItems(p -> new ItemStack(PoudremagiqueItem.block, (int) (1)).getItem() == p.getItem(),
+						(int) 1);
 		}
 	}
 

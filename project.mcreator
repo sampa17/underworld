@@ -800,6 +800,24 @@
           }
         ]
       }
+    },
+    {
+      "name": "Undersand",
+      "type": "block",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "undersand"
+    },
+    {
+      "name": "Unersandbrule",
+      "type": "recipe",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "unersandbrule"
     }
   ],
   "variable_elements": [],
@@ -832,6 +850,7 @@
       "item.project.ingottitanearmor_armorhelmet": "Titane Helmet",
       "item.project.squeletteperdu": "Lost Skeleton Spawn Egg",
       "item.project.vibranim": "Vibranium Crystal",
+      "block.project.undersand": "Under Sand",
       "item.project.osuse": "Worn Bone",
       "item.project.caracorn_meat_2": "Cooked Caracorn Meat ",
       "item.project.ingottitanearmor_armorboots": "Titane boots",

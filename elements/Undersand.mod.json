@@ -2,12 +2,12 @@
   "_fv": 8,
   "_type": "block",
   "definition": {
-    "texture": "diamond_ore",
-    "textureTop": "diamond_ore",
-    "textureLeft": "diamond_ore",
-    "textureFront": "diamond_ore",
-    "textureRight": "diamond_ore",
-    "textureBack": "diamond_ore",
+    "texture": "concrete_powder_black",
+    "textureTop": "concrete_powder_black",
+    "textureLeft": "concrete_powder_black",
+    "textureFront": "concrete_powder_black",
+    "textureRight": "concrete_powder_black",
+    "textureBack": "concrete_powder_black",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -20,17 +20,17 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "name": "Vibranium Ore",
+    "name": "Under Sand",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
-    "hasGravity": false,
+    "hasGravity": true,
     "creativeTab": {
       "value": "CUSTOM:Tabmod"
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": "CUSTOM:Vibranim"
+      "value": ""
     },
     "dropAmount": 1,
     "isBeaconBase": false,
@@ -39,7 +39,7 @@
     "canProvidePower": false,
     "lightOpacity": 255,
     "material": {
-      "value": "ROCK"
+      "value": "SAND"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -57,7 +57,7 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "STONE"
+      "value": "SAND"
     },
     "luminance": 0.0,
     "unbreakable": false,
@@ -85,10 +85,10 @@
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
-        "value": "CUSTOM:Titane"
+        "value": "Blocks.BEDROCK"
       }
     ],
-    "frequencyPerChunks": 8,
+    "frequencyPerChunks": 10,
     "frequencyOnChunk": 8,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 64
