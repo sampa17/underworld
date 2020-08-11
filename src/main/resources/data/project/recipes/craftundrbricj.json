@@ -1,0 +1,26 @@
+{
+  "group": "project",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "project:understone"
+    },
+    "1": {
+      "item": "project:understone"
+    },
+    "2": {
+      "item": "project:understone"
+    },
+    "3": {
+      "item": "project:understone"
+    }
+  },
+  "result": {
+    "item": "project:undrrbrick",
+    "count": 2
+  }
+}

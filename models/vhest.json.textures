@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "cheststst1",
+        "1": "chehsh2",
+        "2": "hcest",
+        "missing": ""
+      },
+      "name": "default"
+    }
+  }
+}

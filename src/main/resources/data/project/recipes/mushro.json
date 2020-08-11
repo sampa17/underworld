@@ -1,0 +1,19 @@
+{
+  "group": "project",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:bowl"
+    },
+    "1": {
+      "item": "project:plantchamp"
+    }
+  },
+  "result": {
+    "item": "project:mushr",
+    "count": 1
+  }
+}

@@ -1,12 +1,9 @@
 {
-  "_fv": 8,
+  "_fv": 10,
   "_type": "overlay",
   "definition": {
     "priority": "NORMAL",
-    "conditionxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"condition_input\" deletable=\"false\" x=\"40\" y=\"40\"><value name=\"CONDITION\"><block type=\"logic_boolean\"><field name=\"BOOL\">TRUE</field></block></value></block></xml>",
     "components": [],
-    "baseTexture": "",
-    "baseTextureW": 0,
-    "baseTextureH": 0
+    "baseTexture": ""
   }
 }

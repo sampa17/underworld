@@ -1,0 +1,25 @@
+{
+  "_fv": 10,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "mushroomshoupa",
+    "customModelName": "Normal",
+    "name": "Under Mushroom Soup",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmod"
+    },
+    "stackSize": 1,
+    "nutritionalValue": 6,
+    "saturation": 0.4,
+    "eatingSpeed": 30,
+    "forDogs": false,
+    "isAlwaysEdible": false,
+    "animation": "drink",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "MushrFoodEaten"
+    }
+  }
+}

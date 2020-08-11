@@ -1,11 +1,11 @@
 {
-  "_fv": 8,
+  "_fv": 10,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "poudre",
     "customModelName": "Normal",
-    "name": "Mysterie Powder",
+    "name": "Mystery Powder",
     "creativeTab": {
       "value": "CUSTOM:Tabmod"
     },
@@ -16,6 +16,7 @@
     "damageCount": 0,
     "destroyAnyBlock": false,
     "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [],

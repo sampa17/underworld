@@ -7,13 +7,15 @@ import net.minecraft.entity.Entity;
 
 import net.mcreator.project.ProjectModElements;
 
+import java.util.Map;
+
 @ProjectModElements.ModElement.Tag
 public class UnderwaterMobplayerCollidesBlockProcedure extends ProjectModElements.ModElement {
 	public UnderwaterMobplayerCollidesBlockProcedure(ProjectModElements instance) {
 		super(instance, 44);
 	}
 
-	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
+	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			System.err.println("Failed to load dependency entity for procedure UnderwaterMobplayerCollidesBlock!");
 			return;

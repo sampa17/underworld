@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "project:blocks/malignant_purple_plant_block",
+    "up": "project:blocks/malignant_purple_plant_block",
+    "north": "project:blocks/malignant_purple_plant_block",
+    "east": "project:blocks/malignant_purple_plant_block",
+    "south": "project:blocks/malignant_purple_plant_block",
+    "west": "project:blocks/malignant_purple_plant_block",
+    "particle": "project:blocks/malignant_purple_plant_block"
+  }
+}

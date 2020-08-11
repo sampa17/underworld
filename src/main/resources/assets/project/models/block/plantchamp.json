@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "project:blocks/champ",
+    "particle": "project:blocks/champ"
+  }
+}

@@ -48,7 +48,7 @@ public class BedrocktracerItem extends ProjectModElements.ModElement {
 
 		@Override
 		public float getDestroySpeed(ItemStack itemstack, BlockState blockstate) {
-			return 0;
+			return 1;
 		}
 
 		@Override

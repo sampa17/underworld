@@ -1,0 +1,11 @@
+{
+  "parent": "project:custom/vhest",
+  "textures": {
+    "all": "project:blocks/chehsh2",
+    "particle": "project:blocks/chehsh2",
+    "0": "project:blocks/cheststst1",
+    "1": "project:blocks/chehsh2",
+    "2": "project:blocks/hcest",
+    "missing": "project:blocks/"
+  }
+}

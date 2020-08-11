@@ -20,13 +20,13 @@ import net.mcreator.project.ProjectModElements;
 
 @ProjectModElements.ModElement.Tag
 public class IngottitanearmorArmorItem extends ProjectModElements.ModElement {
-	@ObjectHolder("project:ingottitanearmor_armorhelmet")
+	@ObjectHolder("project:ingottitanearmor_armor_helmet")
 	public static final Item helmet = null;
-	@ObjectHolder("project:ingottitanearmor_armorbody")
+	@ObjectHolder("project:ingottitanearmor_armor_chestplate")
 	public static final Item body = null;
-	@ObjectHolder("project:ingottitanearmor_armorlegs")
+	@ObjectHolder("project:ingottitanearmor_armor_leggings")
 	public static final Item legs = null;
-	@ObjectHolder("project:ingottitanearmor_armorboots")
+	@ObjectHolder("project:ingottitanearmor_armor_boots")
 	public static final Item boots = null;
 	public IngottitanearmorArmorItem(ProjectModElements instance) {
 		super(instance, 39);
@@ -69,24 +69,24 @@ public class IngottitanearmorArmorItem extends ProjectModElements.ModElement {
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
 				return "project:textures/models/armor/ingottitanearmor_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
-		}.setRegistryName("ingottitanearmor_armorhelmet"));
+		}.setRegistryName("ingottitanearmor_armor_helmet"));
 		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.CHEST, new Item.Properties().group(TabmodItemGroup.tab)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
 				return "project:textures/models/armor/ingottitanearmor_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
-		}.setRegistryName("ingottitanearmor_armorbody"));
+		}.setRegistryName("ingottitanearmor_armor_chestplate"));
 		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.LEGS, new Item.Properties().group(TabmodItemGroup.tab)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
 				return "project:textures/models/armor/ingottitanearmor_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
-		}.setRegistryName("ingottitanearmor_armorlegs"));
+		}.setRegistryName("ingottitanearmor_armor_leggings"));
 		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.FEET, new Item.Properties().group(TabmodItemGroup.tab)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
 				return "project:textures/models/armor/ingottitanearmor_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
-		}.setRegistryName("ingottitanearmor_armorboots"));
+		}.setRegistryName("ingottitanearmor_armor_boots"));
 	}
 }

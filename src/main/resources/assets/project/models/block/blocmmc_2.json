@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "project:blocks/nightshroom_hat_outside",
+    "up": "project:blocks/nightshroom_hat_outside",
+    "north": "project:blocks/nightshroom_hat_outside",
+    "east": "project:blocks/nightshroom_hat_outside",
+    "south": "project:blocks/nightshroom_hat_outside",
+    "west": "project:blocks/nightshroom_hat_outside",
+    "particle": "project:blocks/nightshroom_hat_outside"
+  }
+}

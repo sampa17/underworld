@@ -1,5 +1,5 @@
 {
-  "_fv": 8,
+  "_fv": 10,
   "_type": "biome",
   "definition": {
     "groundBlock": {
@@ -25,7 +25,6 @@
     "treeFruits": {
       "value": "Blocks.AIR"
     },
-    "customColors": false,
     "airColor": {
       "value": -5916161,
       "falpha": 0.0
@@ -59,15 +58,33 @@
       "value": "No parent"
     },
     "biomeDictionaryTypes": [],
-    "spawnList": [
+    "spawnEntries": [
       {
-        "value": "CUSTOM:Undergolem"
+        "entity": {
+          "value": "CUSTOM:Undergolem"
+        },
+        "minGroup": 1,
+        "maxGroup": 15,
+        "weight": 15,
+        "spawnType": "creature"
       },
       {
-        "value": "CUSTOM:Squeletteperdu"
+        "entity": {
+          "value": "CUSTOM:Squeletteperdu"
+        },
+        "minGroup": 1,
+        "maxGroup": 15,
+        "weight": 15,
+        "spawnType": "creature"
       },
       {
-        "value": "CUSTOM:Capricorm"
+        "entity": {
+          "value": "CUSTOM:Capricorm"
+        },
+        "minGroup": 1,
+        "maxGroup": 15,
+        "weight": 15,
+        "spawnType": "creature"
       }
     ]
   }

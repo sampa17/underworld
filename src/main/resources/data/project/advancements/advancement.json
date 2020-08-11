@@ -1,0 +1,32 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "project:bedrocktracer"
+    },
+    "title": {
+      "translate": "advancements.advancement.title"
+    },
+    "description": {
+      "translate": "advancements.advancement.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "advancement": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "project:bedrockdimension"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 50,
+    "recipes": [
+      "project:craftbedrocktranspercer"
+    ]
+  }
+}

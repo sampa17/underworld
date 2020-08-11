@@ -14,6 +14,9 @@ import net.mcreator.project.procedures.Caracornmeat1FoodEatenProcedure;
 import net.mcreator.project.itemgroup.TabmodItemGroup;
 import net.mcreator.project.ProjectModElements;
 
+import java.util.Map;
+import java.util.HashMap;
+
 @ProjectModElements.ModElement.Tag
 public class Caracornmeat1Item extends ProjectModElements.ModElement {
 	@ObjectHolder("project:caracornmeat_1")
@@ -41,11 +44,11 @@ public class Caracornmeat1Item extends ProjectModElements.ModElement {
 		@Override
 		public ItemStack onItemUseFinish(ItemStack itemStack, World world, LivingEntity entity) {
 			ItemStack retval = super.onItemUseFinish(itemStack, world, entity);
-			int x = (int) entity.getPosX();
-			int y = (int) entity.getPosY();
-			int z = (int) entity.getPosZ();
+			double x = entity.getPosX();
+			double y = entity.getPosY();
+			double z = entity.getPosZ();
 			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
 				Caracornmeat1FoodEatenProcedure.executeProcedure($_dependencies);
 			}

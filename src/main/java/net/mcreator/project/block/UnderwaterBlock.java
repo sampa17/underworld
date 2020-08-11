@@ -44,6 +44,8 @@ import net.mcreator.project.itemgroup.TabmodItemGroup;
 import net.mcreator.project.ProjectModElements;
 
 import java.util.Random;
+import java.util.Map;
+import java.util.HashMap;
 
 @ProjectModElements.ModElement.Tag
 public class UnderwaterBlock extends ProjectModElements.ModElement {
@@ -51,8 +53,8 @@ public class UnderwaterBlock extends ProjectModElements.ModElement {
 	public static final FlowingFluidBlock block = null;
 	@ObjectHolder("project:underwater_bucket")
 	public static final Item bucket = null;
-	private FlowingFluid flowing = null;
-	private FlowingFluid still = null;
+	public static FlowingFluid flowing = null;
+	public static FlowingFluid still = null;
 	private ForgeFlowingFluid.Properties fluidproperties = null;
 	public UnderwaterBlock(ProjectModElements instance) {
 		super(instance, 4);
@@ -75,8 +77,8 @@ public class UnderwaterBlock extends ProjectModElements.ModElement {
 	@Override
 	public void initElements() {
 		fluidproperties = new ForgeFlowingFluid.Properties(() -> still, () -> flowing,
-				FluidAttributes.builder(new ResourceLocation("project:blocks/unerwater"), new ResourceLocation("project:blocks/unerwater"))
-						.luminosity(2).density(500).viscosity(500).gaseous()).bucket(() -> bucket).block(() -> block);
+				FluidAttributes.builder(new ResourceLocation("project:blocks/underww"), new ResourceLocation("project:blocks/underww")).luminosity(2)
+						.density(500).viscosity(500).gaseous()).bucket(() -> bucket).block(() -> block);
 		still = (FlowingFluid) new ForgeFlowingFluid.Source(fluidproperties).setRegistryName("underwater");
 		flowing = (FlowingFluid) new ForgeFlowingFluid.Flowing(fluidproperties).setRegistryName("underwater_flowing");
 		elements.blocks.add(() -> new FlowingFluidBlock(still, Block.Properties.create(Material.WATER)) {
@@ -87,7 +89,7 @@ public class UnderwaterBlock extends ProjectModElements.ModElement {
 				int y = pos.getY();
 				int z = pos.getZ();
 				{
-					java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+					Map<String, Object> $_dependencies = new HashMap<>();
 					$_dependencies.put("entity", entity);
 					UnderwaterMobplayerCollidesBlockProcedure.executeProcedure($_dependencies);
 				}

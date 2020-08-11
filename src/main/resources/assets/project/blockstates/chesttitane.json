@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "project:block/chesttitane"
+    },
+    "facing=east": {
+      "model": "project:block/chesttitane",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "project:block/chesttitane",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "project:block/chesttitane",
+      "y": 270
+    }
+  }
+}
