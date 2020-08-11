@@ -74,7 +74,7 @@ public class BedrockdimensionDimension extends ProjectModElements.ModElement {
 	@SubscribeEvent
 	public void onRegisterDimensionsEvent(RegisterDimensionsEvent event) {
 		if (DimensionType.byName(new ResourceLocation("project:bedrockdimension")) == null) {
-			DimensionManager.registerDimension(new ResourceLocation("project:bedrockdimension"), dimension, null, false);
+			DimensionManager.registerDimension(new ResourceLocation("project:bedrockdimension"), dimension, null, true);
 		}
 		type = DimensionType.byName(new ResourceLocation("project:bedrockdimension"));
 	}

@@ -1,11 +1,12 @@
 {
-  "parent": "project:custom/vhest",
+  "parent": "block/cube",
   "textures": {
-    "all": "project:blocks/chehsh2",
-    "particle": "project:blocks/chehsh2",
-    "0": "project:blocks/cheststst1",
-    "1": "project:blocks/chehsh2",
-    "2": "project:blocks/hcest",
-    "missing": "project:blocks/"
+    "down": "project:blocks/chehsh2",
+    "up": "project:blocks/chehsh2",
+    "north": "project:blocks/hcest",
+    "east": "project:blocks/cheststst1",
+    "south": "project:blocks/cheststst1",
+    "west": "project:blocks/cheststst1",
+    "particle": "project:blocks/chehsh2"
   }
 }

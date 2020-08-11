@@ -10,7 +10,9 @@
     "growapableSpawnType": "Plains",
     "growapableMaxHeight": 3,
     "name": "Under Mushroom",
-    "specialInfo": [],
+    "specialInfo": [
+      "Clique droit avec bone meal ."
+    ],
     "creativeTab": {
       "value": "CUSTOM:Tabmod"
     },

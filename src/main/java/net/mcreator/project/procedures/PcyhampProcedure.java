@@ -67,7 +67,7 @@ public class PcyhampProcedure extends ProjectModElements.ModElement {
 				Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
 						.getTemplateDefaulted(new ResourceLocation("project", "champi"));
 				if (template != null) {
-					template.addBlocksToWorld(world, new BlockPos((int) (x + 9), (int) y, (int) z),
+					template.addBlocksToWorld(world, new BlockPos((int) (x - 6), (int) y, (int) (z - 6)),
 							new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false));
 				}
 			}

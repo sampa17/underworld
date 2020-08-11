@@ -1004,8 +1004,8 @@
       "advancements.advancement.title": "A Under World ",
       "block.project.understone": "Under Stone",
       "item.project.vibraniumsword": "Vibranium Sword",
-      "block.project.bombonne": "Vibranium Bombs",
       "block.project.titanebarrier": "Titane Barrier",
+      "block.project.bombonne": "Vibranium Bombs",
       "item.project.bedrockdimension": "Bedrockdimension Portal Igniter",
       "entity.project.capricorm": "Caracorn",
       "block.project.blocccm_1": "Under Mooshroom Trunk",
@@ -1043,7 +1043,7 @@
       "item.project.bedrocktracer": "World Switcher",
       "item.project.vibraniumshovel": "Vibranium Shovel",
       "item.project.ingottitanearmor_armor_helmet": "Titane Helmet",
-      "block.project.undrrbrick": "Under Bricj",
+      "block.project.undrrbrick": "Under Brick",
       "block.project.blocmmc_2": "Under Mooshroom Hat",
       "block.project.vibraniumore": "Vibranium Ore"
     }
